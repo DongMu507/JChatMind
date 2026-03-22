@@ -11,4 +11,7 @@ public class JchatmindApplication {
     }
 
 }
+// 这是同事在周二写的代码
+// 这是测试分支功能
+// 测试游离状态
 // 这是我作为老板强制加的代码！
