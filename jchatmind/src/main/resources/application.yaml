@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: jchatmind
+  datasource:
+    url: jdbc:postgresql://localhost:5432/jchatmind
+    username: postgres
+    password: Rdong6002c
+    driver-class-name: org.postgresql.Driver
+  mail:
+    host: smtp.qq.com
+    port: 465
+    username: 211807751@qq.com
+    password: gbpxxdseqwoxbhhh
+    protocol: smtps  # 🌟核心修改1：直接声明使用安全的 smtps 协议
+    default-encoding: UTF-8
+    properties:
+      mail:
+        smtps: # 🌟核心修改2：这里的属性前缀也跟着变成 smtps
+          auth: true
+          ssl:
+            enable: true
+          timeout: 10000 # 增加超时时间，防止网络波动
+  ai:
+    deepseek:
+      api-key: sk-064c94a19eb749abb41e894103bacfcd
+      base-url: https://api.deepseek.com
+      chat:
+        options:
+          model: deepseek-chat
+    zhipuai:
+      api-key: your-api-key
+      base-url: https://open.bigmodel.cn/api/paas
+      chat:
+        options:
+          model: glm-4.6
+mybatis:
+  type-aliases-package: com.kama.jchatmind.model.entity
+  mapper-locations: classpath:mapper/*.xml
+  type-handlers-package: com.kama.jchatmind.typehandler
+
+document:
+  storage:
+    base-path: ./data/documents
