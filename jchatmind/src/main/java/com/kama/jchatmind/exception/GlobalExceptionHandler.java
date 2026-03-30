@@ -2,6 +2,8 @@ package com.kama.jchatmind.exception;
 
 import com.kama.jchatmind.model.common.ApiResponse;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.context.request.async.AsyncRequestTimeoutException;
+import org.springframework.http.converter.HttpMessageNotWritableException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -33,5 +35,15 @@ public class GlobalExceptionHandler {
     public ApiResponse<Void> handleException(Exception e) {
         log.error("服务器内部错误", e);
         return ApiResponse.error("服务器内部错误");
+    }
+
+    @ExceptionHandler(AsyncRequestTimeoutException.class)
+    public void handleAsyncRequestTimeoutException(AsyncRequestTimeoutException e) {
+        log.warn("Async request timeout");
+    }
+
+    @ExceptionHandler(HttpMessageNotWritableException.class)
+    public void handleHttpMessageNotWritableException(HttpMessageNotWritableException e) {
+        log.warn("HttpMessageNotWritableException: ", e.getMessage());
     }
 }

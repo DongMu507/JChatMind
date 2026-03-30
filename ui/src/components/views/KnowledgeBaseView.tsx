@@ -195,7 +195,7 @@ const KnowledgeBaseView: React.FC = () => {
             <Upload
               customRequest={handleUpload}
               showUploadList={false}
-              accept=".md"
+              accept=".md,.pdf,.txt"
               disabled={uploading}
             >
               <Button
@@ -208,7 +208,7 @@ const KnowledgeBaseView: React.FC = () => {
               </Button>
             </Upload>
             <Text type="secondary" className="block mt-2 text-xs">
-              支持格式: Markdown
+              支持格式: Markdown (.md), PDF (.pdf), 纯文本 (.txt)
             </Text>
           </Card>
         </div>

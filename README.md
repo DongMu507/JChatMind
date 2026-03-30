@@ -1,16 +1,6 @@
 
 # AI智能体助手-JChatMind
 
-最近很多录友在做 AI 项目，但我发现一个普遍问题：
-
-简历写着“接入大模型、实现聊天”。
-
-面试官一句话就能给你问懵：“**那你到底做了什么？不就是调 API 吗**？”
-
-一个聊天对话框和agent 是有区别的。
-
-我这次在[知识星球](https://programmercarl.com/other/kstar.html)里**更新一个Java Agent项目**：JChatMind（AI智能体助手）
-
 JChatMind 是一个智能 AI Agent 系统，基于 Spring AI 框架构建，实现了自主决策、工具调用和知识库检索等核心能力。
 
 系统采用 **Think-Execute 循环机制，能够理解复杂任务、规划执行步骤、调用外部工具，并基于 RAG 技术从知识库中检索相关信息，完成多步骤的复杂任务**。
@@ -24,81 +14,6 @@ JChatMind 是一个智能 AI Agent 系统，基于 Spring AI 框架构建，实�
 * 我实现了 RAG + 向量检索（pgvector）
 * 我实现了 多模型切换架构（注册表模式）
 * 我实现了 SSE 实时推送（执行状态可视化）
-
-### 项目演示
-
-![image](https://file1.kamacoder.com/i/web/2026-01-09_16-30-36.jpg)
-
-![image](https://file1.kamacoder.com/i/web/2026-01-09_16-31-19.jpg)
-
-![image](https://file1.kamacoder.com/i/web/2026-01-09_16-31-49.jpg)
-
-![image](https://file1.kamacoder.com/i/web/2026-01-09_16-32-08.jpg)
-
-### 项目专栏目录
-
-![](https://file1.kamacoder.com/i/web/2026-01-08_10-43-35.jpg)
-
-从理论基础：agent的基本概念
-
-到项目实战：大模型怎么用、环境怎么搭，Agent loop如何设计，怎么引入知识库与RAG，以及MCP
-
-最后再到求职相关：项目的简历写法、项目亮点、本项目常见面试题，都给大家准备好了。
-
-从**项目源码到答疑，一条龙服务，不用担心学不会，有什么问题都可以在专属微信群提问**：（[知识星球](https://programmercarl.com/other/kstar.html)里每个项目都有专属答疑群）
-
-![](https://file1.kamacoder.com/i/web/2026-01-08_10-59-23.jpg)
-
-### 项目架构图
-
-![](https://file1.kamacoder.com/i/web/2026-01-08_11-19-14.jpg)
-
-JChatMind 通过分层架构 + Agent 核心服务，把 AI 能力（模型、RAG、工具）抽象成可组合、可扩展的系统模块
-
-### 获取本专栏
-
-扫如下十元代金券，只需要 196元，加入[知识星球](https://programmercarl.com/other/kstar.html)，你将**获取20+套项目教程的专栏+源码+配套答疑**： （每个项目不到十元钱，而且**加入星球的服务远不止就这些项目**！）
-
-如果不知道[知识星球](https://programmercarl.com/other/kstar.html)对自己是否有帮助，可以进来看看，感受一下星球里的学习氛围，**三天（72h）内可以全额退款**！
-
-知识星球APP右上角 自己申请退款，一个小时到账 全程无套路， **记得是三天内（72h）才能退款**。
-
-### 项目专栏细节
-
-理论知识讲解：
-
-![](https://file1.kamacoder.com/i/web/2026-01-08_11-02-38.jpg)
-
-循序渐进，带你做agent实战开发：
-
-![](https://file1.kamacoder.com/i/web/2026-01-08_11-03-33.jpg)
-
-![](https://file1.kamacoder.com/i/web/2026-01-08_11-03-57.jpg)
-
-![](https://file1.kamacoder.com/i/web/2026-01-08_11-03-57.jpg)
-
-![](https://file1.kamacoder.com/i/web/2026-01-08_11-04-20.jpg)
-
-![](https://file1.kamacoder.com/i/web/2026-01-08_11-04-41.jpg)
-
-最后，求职相关，简历写法、相关面试题，技术亮点 都安排的明明白白：
-
-**技术亮点、性能指标、功能指标、技术指标**，都给大家列出，甚至，不同岗位（后端、算法、大模型）使用这个项目的简历写法，都列出来，让面试没有死角：
-
-![](https://file1.kamacoder.com/i/web/2026-01-08_11-05-09.jpg)
-
-**技术选型的理由、技术难点、解决方案、技术成长点、深入解析计数原理**：
-
-![](https://file1.kamacoder.com/i/web/2026-01-08_11-11-08.jpg)
-
-针对项目原理和项目实现都准备了相关面试题
-
-项目原理面试题以及回答：
-![](https://file1.kamacoder.com/i/web/2026-01-08_11-15-22.jpg)
-
-项目实战面试题以及回答：
-![](https://file1.kamacoder.com/i/web/2026-01-08_11-14-09.jpg)
-
 
 ### 项目亮点
 
@@ -173,47 +88,5 @@ JChatMind 用 SSE 做了：
 * 实时通信：SSE 服务端推送、连接管理、执行状态实时展示
 * 可量化成果表达：响应 <2s、并发 100+、检索准确率 85%+ 这种“面试官一眼懂”的指标怎么做、怎么写、怎么讲
 
-
-### 加入知识星球获取本项目
-
-加入[知识星球](https://programmercarl.com/other/kstar.html) 获取本项目。
-
-加入[知识星球](https://mp.weixin.qq.com/s/iUiIRYlJvNqTsvfQXwK6FA)四大权益
-
-1、**高质量项目合集（C++ / Java / Go / Python / AI**）
-
-可以获得星球里 **20+ 套项目专栏资料，不仅有详细讲解，而且都配套专属答疑服务**。
-
-全网十分稀缺的  **C++ AI应用项目（AI应用服务平台），Go AI项目（GopherAI），Java AI项目（JChatMind**）。
-
-![](https://file1.kamacoder.com/i/web/2025-12-31_11-41-52.jpg)
-
-2、**精品八股PDF**
-
-速记八股帮助众多录友们，短时间内快速上岸：
-
-![](https://file1.kamacoder.com/i/web/2025-09-28_17-44-23.jpg)
-
-3、**独家资料 & 学习氛围**
-
-大厂面经、薪资报告、秋招投递总结表
-
-![](https://file1.kamacoder.com/i/web/2025-09-28_18-26-47.jpg)
-
-学习路线清晰，方向明确
-
-![](https://file1.kamacoder.com/i/web/2025-09-28_18-39-32.jpg)
-
-星球里全是志同道合的伙伴，学习氛围 🔥🔥🔥
-
-![](https://file1.kamacoder.com/i/web/2025-09-28_18-50-25.jpg)
-
-4、**卡哥 1v1 提问 & 简历修改**
-
-直接向我提问，面试疑惑、学习路线、职业规划一对一解答
-
-![](https://file1.kamacoder.com/i/web/2025-09-29_10-07-44.jpg)
-
-加入[知识星球](https://mp.weixin.qq.com/s/iUiIRYlJvNqTsvfQXwK6FA)后如果不满意，三天内（72h）可全额退款！
 
 

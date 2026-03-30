@@ -8,6 +8,8 @@ import com.kama.jchatmind.model.response.CreateChatMessageResponse;
 import com.kama.jchatmind.model.vo.ChatMessageVO;
 import com.kama.jchatmind.service.ChatMessageFacadeService;
 import com.kama.jchatmind.service.SseService;
+import io.micrometer.observation.Observation;
+import io.micrometer.observation.ObservationRegistry;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.memory.ChatMemory;
@@ -77,6 +79,7 @@ public class JChatMind {
     private ChatMessageConverter chatMessageConverter;
 
     private ChatMessageFacadeService chatMessageFacadeService;
+    private ObservationRegistry observationRegistry;
 
     // 最后一次的 ChatResponse
     private ChatResponse lastChatResponse;
@@ -99,7 +102,8 @@ public class JChatMind {
                      String chatSessionId,
                      SseService sseService,
                      ChatMessageFacadeService chatMessageFacadeService,
-                     ChatMessageConverter chatMessageConverter
+                     ChatMessageConverter chatMessageConverter,
+                     ObservationRegistry observationRegistry
     ) {
         this.agentId = agentId;
         this.name = name;
@@ -116,6 +120,7 @@ public class JChatMind {
 
         this.chatMessageFacadeService = chatMessageFacadeService;
         this.chatMessageConverter = chatMessageConverter;
+        this.observationRegistry = observationRegistry;
 
         this.agentState = AgentState.IDLE;
 
@@ -167,149 +172,164 @@ public class JChatMind {
     // SystemMessage 不需要持久化
     // UserMessage 在每次用户发送问题之间就已经持久化过了
     private void saveMessage(Message message) {
-        ChatMessageDTO.ChatMessageDTOBuilder builder = ChatMessageDTO.builder();
-        if (message instanceof AssistantMessage assistantMessage) {
-            ChatMessageDTO chatMessageDTO = builder.role(ChatMessageDTO.RoleType.ASSISTANT)
-                    .content(assistantMessage.getText())
-                    .sessionId(this.chatSessionId)
-                    .metadata(ChatMessageDTO.MetaData.builder()
-                            .toolCalls(assistantMessage.getToolCalls())
-                            .build())
-                    .build();
-            CreateChatMessageResponse chatMessage = chatMessageFacadeService.createChatMessage(chatMessageDTO);
-            chatMessageDTO.setId(chatMessage.getChatMessageId());
-            pendingChatMessages.add(chatMessageDTO);
-        } else if (message instanceof ToolResponseMessage toolResponseMessage) {
-            // 持久化 ToolResponseMessage
-            for (ToolResponseMessage.ToolResponse toolResponse : toolResponseMessage.getResponses()) {
-                ChatMessageDTO chatMessageDTO = builder.role(ChatMessageDTO.RoleType.TOOL)
-                        .content(toolResponse.responseData())
-                        .sessionId(this.chatSessionId)
-                        .metadata(ChatMessageDTO.MetaData.builder()
-                                .toolResponse(toolResponse)
-                                .build())
-                        .build();
-                CreateChatMessageResponse chatMessage = chatMessageFacadeService.createChatMessage(chatMessageDTO);
-                chatMessageDTO.setId(chatMessage.getChatMessageId());
-                pendingChatMessages.add(chatMessageDTO);
-            }
-        } else {
-            throw new IllegalArgumentException("不支持的 Message 类型: " + message.getClass().getName());
-        }
+        Observation.createNotStarted("agent.message.persist", observationRegistry)
+                .lowCardinalityKeyValue("agent.id", this.agentId)
+                .lowCardinalityKeyValue("session.id", this.chatSessionId)
+                .observe(() -> {
+                    ChatMessageDTO.ChatMessageDTOBuilder builder = ChatMessageDTO.builder();
+                    if (message instanceof AssistantMessage assistantMessage) {
+                        ChatMessageDTO chatMessageDTO = builder.role(ChatMessageDTO.RoleType.ASSISTANT)
+                                .content(assistantMessage.getText())
+                                .sessionId(this.chatSessionId)
+                                .metadata(ChatMessageDTO.MetaData.builder()
+                                        .toolCalls(assistantMessage.getToolCalls())
+                                        .build())
+                                .build();
+                        CreateChatMessageResponse chatMessage = chatMessageFacadeService.createChatMessage(chatMessageDTO);
+                        chatMessageDTO.setId(chatMessage.getChatMessageId());
+                        pendingChatMessages.add(chatMessageDTO);
+                    } else if (message instanceof ToolResponseMessage toolResponseMessage) {
+                        for (ToolResponseMessage.ToolResponse toolResponse : toolResponseMessage.getResponses()) {
+                            ChatMessageDTO chatMessageDTO = builder.role(ChatMessageDTO.RoleType.TOOL)
+                                    .content(toolResponse.responseData())
+                                    .sessionId(this.chatSessionId)
+                                    .metadata(ChatMessageDTO.MetaData.builder()
+                                            .toolResponse(toolResponse)
+                                            .build())
+                                    .build();
+                            CreateChatMessageResponse chatMessage = chatMessageFacadeService.createChatMessage(chatMessageDTO);
+                            chatMessageDTO.setId(chatMessage.getChatMessageId());
+                            pendingChatMessages.add(chatMessageDTO);
+                        }
+                    } else {
+                        throw new IllegalArgumentException("不支持的 Message 类型: " + message.getClass().getName());
+                    }
+                });
     }
 
     // 刷新 pendingMessages, 将数据通过 sse 发送给前端
     private void refreshPendingMessages() {
-        for (ChatMessageDTO message : pendingChatMessages) {
-            ChatMessageVO vo = chatMessageConverter.toVO(message);
-            SseMessage sseMessage = SseMessage.builder()
-                    .type(SseMessage.Type.AI_GENERATED_CONTENT)
-                    .payload(SseMessage.Payload.builder()
-                            .message(vo)
-                            .build())
-                    .metadata(SseMessage.Metadata.builder()
-                            .chatMessageId(message.getId())
-                            .build())
-                    .build();
-            sseService.send(this.chatSessionId, sseMessage);
-        }
-        pendingChatMessages.clear();
+        Observation.createNotStarted("agent.sse.flush", observationRegistry)
+                .lowCardinalityKeyValue("agent.id", this.agentId)
+                .lowCardinalityKeyValue("session.id", this.chatSessionId)
+                .observe(() -> {
+                    for (ChatMessageDTO message : pendingChatMessages) {
+                        ChatMessageVO vo = chatMessageConverter.toVO(message);
+                        SseMessage sseMessage = SseMessage.builder()
+                                .type(SseMessage.Type.AI_GENERATED_CONTENT)
+                                .payload(SseMessage.Payload.builder()
+                                        .message(vo)
+                                        .build())
+                                .metadata(SseMessage.Metadata.builder()
+                                        .chatMessageId(message.getId())
+                                        .build())
+                                .build();
+                        sseService.send(this.chatSessionId, sseMessage);
+                    }
+                    pendingChatMessages.clear();
+                });
     }
 
     // thinkPrompt 应该放到 system 中还是
     private boolean think() {
-        String thinkPrompt = """
-                现在你是一个智能的的具体「决策模块」
-                请根据当前对话上下文，决定下一步的动作。
-                                \s
-                【额外信息】
-                - 你目前拥有的知识库列表以及描述：%s
-                - 如果有缺失的上下文时，优先从知识库中进行搜索
-                """.formatted(this.availableKbs);
+        return Observation.createNotStarted("agent.think", observationRegistry)
+                .lowCardinalityKeyValue("agent.id", this.agentId)
+                .lowCardinalityKeyValue("session.id", this.chatSessionId)
+                .observe(() -> {
+                    String thinkPrompt = """
+                            现在你是一个智能的的具体「决策模块」
+                            请根据当前对话上下文，决定下一步的动作。
+                                            
+                            【额外信息】
+                            - 你目前拥有的知识库列表以及描述：%s
+                            - 如果有缺失的上下文时，优先从知识库中进行搜索
+                            """.formatted(this.availableKbs);
 
-        // 将 thinkPrompt 通过 .user(thinkPrompt) 的方式构造进入 chatClient 中
-        // 既能让每次 messageList 的最后一条是 本条提示词，
-        // 又能够避免将 thinkPrompt 加入到聊天记录中
-        Prompt prompt = Prompt.builder()
-                .chatOptions(this.chatOptions)
-                .messages(this.chatMemory.get(this.chatSessionId))
-                .build();
+                    Prompt prompt = Prompt.builder()
+                            .chatOptions(this.chatOptions)
+                            .messages(this.chatMemory.get(this.chatSessionId))
+                            .build();
 
-        this.lastChatResponse = this.chatClient
-                .prompt(prompt)
-                .system(thinkPrompt)
-                .toolCallbacks(this.availableTools.toArray(new ToolCallback[0]))
-                .call()
-                .chatClientResponse()
-                .chatResponse();
+                    this.lastChatResponse = this.chatClient
+                            .prompt(prompt)
+                            .system(thinkPrompt)
+                            .toolCallbacks(this.availableTools.toArray(new ToolCallback[0]))
+                            .call()
+                            .chatClientResponse()
+                            .chatResponse();
 
-        Assert.notNull(lastChatResponse, "Last chat client response cannot be null");
+                    Assert.notNull(lastChatResponse, "Last chat client response cannot be null");
 
-        AssistantMessage output = this.lastChatResponse
-                .getResult()
-                .getOutput();
+                    AssistantMessage output = this.lastChatResponse
+                            .getResult()
+                            .getOutput();
 
-        List<AssistantMessage.ToolCall> toolCalls = output.getToolCalls();
+                    List<AssistantMessage.ToolCall> toolCalls = output.getToolCalls();
 
-        // 保存
-        saveMessage(output);
-        refreshPendingMessages();
-
-        // 打印工具调用
-        logToolCalls(toolCalls);
-
-        // 如果工具调用不为空，则进入执行阶段
-        return !toolCalls.isEmpty();
+                    saveMessage(output);
+                    refreshPendingMessages();
+                    logToolCalls(toolCalls);
+                    return !toolCalls.isEmpty();
+                });
     }
 
     // 执行
     private void execute() {
-        Assert.notNull(this.lastChatResponse, "Last chat client response cannot be null");
+        Observation.createNotStarted("agent.execute", observationRegistry)
+                .lowCardinalityKeyValue("agent.id", this.agentId)
+                .lowCardinalityKeyValue("session.id", this.chatSessionId)
+                .observe(() -> {
+                    Assert.notNull(this.lastChatResponse, "Last chat client response cannot be null");
 
-        if (!this.lastChatResponse.hasToolCalls()) {
-            return;
-        }
+                    if (!this.lastChatResponse.hasToolCalls()) {
+                        return;
+                    }
 
-        Prompt prompt = Prompt.builder()
-                .messages(this.chatMemory.get(this.chatSessionId))
-                .chatOptions(this.chatOptions)
-                .build();
+                    Prompt prompt = Prompt.builder()
+                            .messages(this.chatMemory.get(this.chatSessionId))
+                            .chatOptions(this.chatOptions)
+                            .build();
 
-        ToolExecutionResult toolExecutionResult = toolCallingManager.executeToolCalls(prompt, this.lastChatResponse);
+                    ToolExecutionResult toolExecutionResult = toolCallingManager.executeToolCalls(prompt, this.lastChatResponse);
 
-        this.chatMemory.clear(this.chatSessionId);
-        this.chatMemory.add(this.chatSessionId, toolExecutionResult.conversationHistory());
+                    this.chatMemory.clear(this.chatSessionId);
+                    this.chatMemory.add(this.chatSessionId, toolExecutionResult.conversationHistory());
 
-        ToolResponseMessage toolResponseMessage = (ToolResponseMessage) toolExecutionResult
-                .conversationHistory()
-                .get(toolExecutionResult.conversationHistory().size() - 1);
+                    ToolResponseMessage toolResponseMessage = (ToolResponseMessage) toolExecutionResult
+                            .conversationHistory()
+                            .get(toolExecutionResult.conversationHistory().size() - 1);
 
-        String collect = toolResponseMessage.getResponses()
-                .stream()
-                .map(resp -> "工具" + resp.name() + "的返回结果为：" + resp.responseData())
-                .collect(Collectors.joining("\n"));
+                    String collect = toolResponseMessage.getResponses()
+                            .stream()
+                            .map(resp -> "工具" + resp.name() + "的返回结果为：" + resp.responseData())
+                            .collect(Collectors.joining("\n"));
 
-        log.info("工具调用结果：{}", collect);
+                    log.info("工具调用结果：{}", collect);
 
-        // 保存工具调用
-        saveMessage(toolResponseMessage);
-        refreshPendingMessages();
+                    saveMessage(toolResponseMessage);
+                    refreshPendingMessages();
 
-        if (toolResponseMessage.getResponses()
-                .stream()
-                .anyMatch(resp -> resp.name().equals("terminate"))) {
-            this.agentState = AgentState.FINISHED;
-            log.info("任务结束");
-        }
+                    if (toolResponseMessage.getResponses()
+                            .stream()
+                            .anyMatch(resp -> resp.name().equals("terminate"))) {
+                        this.agentState = AgentState.FINISHED;
+                        log.info("任务结束");
+                    }
+                });
     }
 
     // 单个步骤模板
     private void step() {
-        if (think()) {
-            execute();
-        } else { // 没有工具调用
-            agentState = AgentState.FINISHED;
-        }
+        Observation.createNotStarted("agent.step", observationRegistry)
+                .lowCardinalityKeyValue("agent.id", this.agentId)
+                .lowCardinalityKeyValue("session.id", this.chatSessionId)
+                .observe(() -> {
+                    if (think()) {
+                        execute();
+                    } else {
+                        agentState = AgentState.FINISHED;
+                    }
+                });
     }
 
     // 运行
@@ -318,22 +338,46 @@ public class JChatMind {
             throw new IllegalStateException("Agent is not idle");
         }
 
-        try {
-            for (int i = 0; i < MAX_STEPS && agentState != AgentState.FINISHED; i++) {
-                // 当前步骤，用于实现 Agent Loop
-                int currentStep = i + 1;
-                step();
-                if (currentStep >= MAX_STEPS) {
-                    agentState = AgentState.FINISHED;
-                    log.warn("Max steps reached, stopping agent");
-                }
-            }
-            agentState = AgentState.FINISHED;
-        } catch (Exception e) {
-            agentState = AgentState.ERROR;
-            log.error("Error running agent", e);
-            throw new RuntimeException("Error running agent", e);
-        }
+        Observation.createNotStarted("agent.run", observationRegistry)
+                .lowCardinalityKeyValue("agent.id", this.agentId)
+                .lowCardinalityKeyValue("session.id", this.chatSessionId)
+                .observe(() -> {
+                    try {
+                        for (int i = 0; i < MAX_STEPS && agentState != AgentState.FINISHED; i++) {
+                            int currentStep = i + 1;
+                            step();
+                            if (currentStep >= MAX_STEPS) {
+                                agentState = AgentState.FINISHED;
+                                log.warn("Max steps reached, stopping agent");
+                            }
+                        }
+                        agentState = AgentState.FINISHED;
+                    } catch (Exception e) {
+                        agentState = AgentState.ERROR;
+                        log.error("Error running agent", e);
+                        try {
+                            ChatMessageVO errorVo = ChatMessageVO.builder()
+                                    .id(java.util.UUID.randomUUID().toString())
+                                    .role(ChatMessageDTO.RoleType.ASSISTANT)
+                                    .content("系统提示：AI 服务暂时无法响应 (" + e.getMessage() + ")，请稍后重试或检查模型网络配置。")
+                                    .build();
+                            SseMessage errorSse = SseMessage.builder()
+                                    .type(SseMessage.Type.AI_GENERATED_CONTENT)
+                                    .payload(SseMessage.Payload.builder().message(errorVo).build())
+                                    .build();
+                            sseService.send(this.chatSessionId, errorSse);
+
+                            SseMessage doneSse = SseMessage.builder()
+                                    .type(SseMessage.Type.AI_DONE)
+                                    .payload(SseMessage.Payload.builder().statusText("错误结束").build())
+                                    .build();
+                            sseService.send(this.chatSessionId, doneSse);
+                        } catch (Exception sseError) {
+                            log.error("Failed to send error message to frontend via SSE", sseError);
+                        }
+                        throw new RuntimeException("Error running agent", e);
+                    }
+                });
     }
 
     @Override

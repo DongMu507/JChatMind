@@ -16,7 +16,11 @@ import com.kama.jchatmind.model.entity.ChunkBgeM3;
 import com.kama.jchatmind.service.DocumentFacadeService;
 import com.kama.jchatmind.service.DocumentStorageService;
 import com.kama.jchatmind.service.MarkdownParserService;
+import com.kama.jchatmind.service.PdfParserService;
 import com.kama.jchatmind.service.RagService;
+import io.micrometer.observation.Observation;
+import io.micrometer.observation.ObservationRegistry;
+import io.micrometer.observation.annotation.Observed;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -39,8 +43,10 @@ public class DocumentFacadeServiceImpl implements DocumentFacadeService {
     private final DocumentConverter documentConverter;
     private final DocumentStorageService documentStorageService;
     private final MarkdownParserService markdownParserService;
+    private final PdfParserService pdfParserService;
     private final RagService ragService;
     private final ChunkBgeM3Mapper chunkBgeM3Mapper;
+    private final ObservationRegistry observationRegistry;
 
     @Override
     public GetDocumentsResponse getDocuments() {
@@ -106,6 +112,7 @@ public class DocumentFacadeServiceImpl implements DocumentFacadeService {
     }
 
     @Override
+    @Observed(name = "document.upload", contextualName = "upload-document")
     public CreateDocumentResponse uploadDocument(String kbId, MultipartFile file) {
         try {
             if (file.isEmpty()) {
@@ -158,9 +165,13 @@ public class DocumentFacadeServiceImpl implements DocumentFacadeService {
 
             log.info("文档上传成功: kbId={}, documentId={}, filename={}", kbId, documentId, originalFilename);
 
-            // 如果是 Markdown 文件，进行解析并生成 chunks
+            // 根据不同的文件类型进行处理并生成 chunks
             if ("md".equalsIgnoreCase(filetype) || "markdown".equalsIgnoreCase(filetype)) {
                 processMarkdownDocument(kbId, documentId, filePath);
+            } else if ("pdf".equalsIgnoreCase(filetype)) {
+                processPdfDocument(kbId, documentId, filePath);
+            } else if ("txt".equalsIgnoreCase(filetype)) {
+                processTxtDocument(kbId, documentId, filePath);
             } else {
                 // TODO: 未来可以增加其他文件类型的处理逻辑
                 log.warn("待新增处理的文件类型: {}", filetype);
@@ -205,64 +216,150 @@ public class DocumentFacadeServiceImpl implements DocumentFacadeService {
      * 处理 Markdown 文档，解析并生成 chunks
      */
     private void processMarkdownDocument(String kbId, String documentId, String filePath) {
-        try {
-            log.info("开始处理 Markdown 文档: kbId={}, documentId={}, filePath={}", kbId, documentId, filePath);
+        Observation.createNotStarted("document.parse.markdown", observationRegistry)
+                .lowCardinalityKeyValue("kb.id", kbId)
+                .lowCardinalityKeyValue("document.id", documentId)
+                .observe(() -> {
+                    try {
+                        log.info("开始处理 Markdown 文档: kbId={}, documentId={}, filePath={}", kbId, documentId, filePath);
 
-            // 从保存的文件路径读取文件
-            Path path = documentStorageService.getFilePath(filePath);
-            try (InputStream inputStream = Files.newInputStream(path)) {
-                // 解析 Markdown 文件
-                List<MarkdownParserService.MarkdownSection> sections = markdownParserService.parseMarkdown(inputStream);
+                        Path path = documentStorageService.getFilePath(filePath);
+                        try (InputStream inputStream = Files.newInputStream(path)) {
+                            List<MarkdownParserService.MarkdownSection> sections = markdownParserService.parseMarkdown(inputStream);
 
-                System.out.println(sections);
+                            if (sections.isEmpty()) {
+                                log.warn("Markdown 文档解析后没有找到任何章节: documentId={}", documentId);
+                                return;
+                            }
 
-                if (sections.isEmpty()) {
-                    log.warn("Markdown 文档解析后没有找到任何章节: documentId={}", documentId);
-                    return;
-                }
+                            LocalDateTime now = LocalDateTime.now();
+                            int chunkCount = 0;
 
-                LocalDateTime now = LocalDateTime.now();
-                int chunkCount = 0;
+                            for (MarkdownParserService.MarkdownSection section : sections) {
+                                String title = section.getTitle();
+                                String content = section.getContent();
 
-                // 为每个章节生成 chunk
-                for (MarkdownParserService.MarkdownSection section : sections) {
-                    String title = section.getTitle();
-                    String content = section.getContent();
+                                if (title == null || title.trim().isEmpty()) {
+                                    continue;
+                                }
 
-                    if (title == null || title.trim().isEmpty()) {
-                        continue;
+                                float[] embedding = ragService.embed(title);
+
+                                ChunkBgeM3 chunk = ChunkBgeM3.builder()
+                                        .kbId(kbId)
+                                        .docId(documentId)
+                                        .content(content != null ? content : "")
+                                        .metadata(null)
+                                        .embedding(embedding)
+                                        .createdAt(now)
+                                        .updatedAt(now)
+                                        .build();
+
+                                int result = chunkBgeM3Mapper.insert(chunk);
+
+                                if (result > 0) {
+                                    chunkCount++;
+                                    log.debug("创建 chunk 成功: title={}, chunkId={}", title, chunk.getId());
+                                } else {
+                                    log.warn("创建 chunk 失败: title={}", title);
+                                }
+                            }
+                            log.info("Markdown 文档处理完成: documentId={}, 共生成 {} 个 chunks", documentId, chunkCount);
+                        }
+                    } catch (Exception e) {
+                        log.error("处理 Markdown 文档失败: documentId={}", documentId, e);
+                    }
+                });
+    }
+
+    /**
+     * 处理 PDF 文档，解析并生成 chunks
+     */
+    private void processPdfDocument(String kbId, String documentId, String filePath) {
+        Observation.createNotStarted("document.parse.pdf", observationRegistry)
+                .lowCardinalityKeyValue("kb.id", kbId)
+                .lowCardinalityKeyValue("document.id", documentId)
+                .observe(() -> {
+                    try {
+                        log.info("开始处理 PDF 文档: kbId={}, documentId={}, filePath={}", kbId, documentId, filePath);
+                        Path path = documentStorageService.getFilePath(filePath);
+                        try (InputStream inputStream = Files.newInputStream(path)) {
+                            List<PdfParserService.TextSection> sections = pdfParserService.parsePdf(inputStream);
+                            saveChunks(kbId, documentId, sections, "PDF");
+                        }
+                    } catch (Exception e) {
+                        log.error("处理 PDF 文档失败: documentId={}", documentId, e);
+                    }
+                });
+    }
+
+    /**
+     * 处理 TXT 文档，解析并生成 chunks
+     */
+    private void processTxtDocument(String kbId, String documentId, String filePath) {
+        Observation.createNotStarted("document.parse.txt", observationRegistry)
+                .lowCardinalityKeyValue("kb.id", kbId)
+                .lowCardinalityKeyValue("document.id", documentId)
+                .observe(() -> {
+                    try {
+                        log.info("开始处理 TXT 文档: kbId={}, documentId={}, filePath={}", kbId, documentId, filePath);
+                        Path path = documentStorageService.getFilePath(filePath);
+                        try (InputStream inputStream = Files.newInputStream(path)) {
+                            List<PdfParserService.TextSection> sections = pdfParserService.parseTxt(inputStream);
+                            saveChunks(kbId, documentId, sections, "TXT");
+                        }
+                    } catch (Exception e) {
+                        log.error("处理 TXT 文档失败: documentId={}", documentId, e);
+                    }
+                });
+    }
+
+    /**
+     * 公共方法：保存通用的 TextSection 到数据库
+     */
+    private void saveChunks(String kbId, String documentId, List<PdfParserService.TextSection> sections, String format) {
+        Observation.createNotStarted("document.chunk.persist", observationRegistry)
+                .lowCardinalityKeyValue("kb.id", kbId)
+                .lowCardinalityKeyValue("document.id", documentId)
+                .lowCardinalityKeyValue("document.type", format)
+                .observe(() -> {
+                    if (sections == null || sections.isEmpty()) {
+                        log.warn("{} 文档解析后没有找到任何章节: documentId={}", format, documentId);
+                        return;
                     }
 
-                    // 对标题进行 embedding
-                    float[] embedding = ragService.embed(title);
+                    LocalDateTime now = LocalDateTime.now();
+                    int chunkCount = 0;
 
-                    // 创建 ChunkBgeM3 实体
-                    ChunkBgeM3 chunk = ChunkBgeM3.builder()
-                            .kbId(kbId)
-                            .docId(documentId)
-                            .content(content != null ? content : "")
-                            .metadata(null) // 可以存储标题信息到 metadata
-                            .embedding(embedding)
-                            .createdAt(now)
-                            .updatedAt(now)
-                            .build();
+                    for (PdfParserService.TextSection section : sections) {
+                        String title = section.getTitle();
+                        String content = section.getContent();
 
-                    // 插入数据库
-                    int result = chunkBgeM3Mapper.insert(chunk);
+                        if (content == null || content.trim().isEmpty()) {
+                            continue;
+                        }
 
-                    if (result > 0) {
-                        chunkCount++;
-                        log.debug("创建 chunk 成功: title={}, chunkId={}", title, chunk.getId());
-                    } else {
-                        log.warn("创建 chunk 失败: title={}", title);
+                        String embedText = (title != null ? title + "\n" : "") + content;
+                        float[] embedding = ragService.embed(embedText);
+
+                        ChunkBgeM3 chunk = ChunkBgeM3.builder()
+                                .kbId(kbId)
+                                .docId(documentId)
+                                .content(content)
+                                .metadata(null)
+                                .embedding(embedding)
+                                .createdAt(now)
+                                .updatedAt(now)
+                                .build();
+
+                        if (chunkBgeM3Mapper.insert(chunk) > 0) {
+                            chunkCount++;
+                        } else {
+                            log.warn("创建 chunk 失败: format={}, documentId={}", format, documentId);
+                        }
                     }
-                }
-                log.info("Markdown 文档处理完成: documentId={}, 共生成 {} 个 chunks", documentId, chunkCount);
-            }
-        } catch (Exception e) {
-            log.error("处理 Markdown 文档失败: documentId={}", documentId, e);
-            // 不抛出异常，避免影响文档上传流程
-        }
+                    log.info("{} 文档处理完成: documentId={}, 共生成 {} 个 chunks", format, documentId, chunkCount);
+                });
     }
 
     /**

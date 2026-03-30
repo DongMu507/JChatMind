@@ -3,6 +3,7 @@ package com.kama.jchatmind.event.listener;
 import com.kama.jchatmind.agent.JChatMind;
 import com.kama.jchatmind.agent.JChatMindFactory;
 import com.kama.jchatmind.event.ChatEvent;
+import io.micrometer.observation.annotation.Observed;
 import lombok.AllArgsConstructor;
 import org.springframework.context.event.EventListener;
 import org.springframework.scheduling.annotation.Async;
@@ -16,6 +17,7 @@ public class ChatEventListener {
 
     @Async
     @EventListener
+    @Observed(name = "chat.event.handle", contextualName = "handle-chat-event")
     public void handle(ChatEvent event) {
         // 创建一个 Agent 实例处理聊天事件
         JChatMind jChatMind = jChatMindFactory.create(event.getAgentId(), event.getSessionId());

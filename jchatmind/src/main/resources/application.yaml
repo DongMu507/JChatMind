@@ -1,4 +1,6 @@
 spring:
+  lifecycle:
+    timeout-per-shutdown-phase: 30s # 优雅停机等待时间
   application:
     name: jchatmind
   datasource:
@@ -28,11 +30,26 @@ spring:
         options:
           model: deepseek-chat
     zhipuai:
-      api-key: your-api-key
+      api-key: 2f4a46d652244b21b3cd6ccd60e70270.91B2eElV9ayDWFiw
       base-url: https://open.bigmodel.cn/api/paas
       chat:
         options:
           model: glm-4.6
+
+zhipu:
+  api:
+    key: ${spring.ai.zhipuai.api-key}
+    rerank-url: https://open.bigmodel.cn/api/paas/v4/rerank
+    rerank-model: glm-4-reranker
+
+llm:
+  embedding:
+    base-url: http://localhost:11434
+    model: bge-m3
+  memory:
+    summary-chat-client-bean: deepseek-chat
+    fallback-chat-client-bean: glm-4.6
+
 mybatis:
   type-aliases-package: com.kama.jchatmind.model.entity
   mapper-locations: classpath:mapper/*.xml
@@ -41,3 +58,37 @@ mybatis:
 document:
   storage:
     base-path: ./data/documents
+
+server:
+  shutdown: graceful # 启用优雅停机
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  endpoint:
+    health:
+      show-details: always
+  observations:
+    annotations:
+      enabled: true
+    key-values:
+      application: ${spring.application.name}
+      env: local
+  tracing:
+    enabled: true
+    sampling:
+      probability: 1.0
+  otlp:
+    tracing:
+      endpoint: http://localhost:4318/v1/traces
+  metrics:
+    tags:
+      application: ${spring.application.name}
+
+logging:
+  file:
+    name: ./logs/jchatmind.log
+  pattern:
+    correlation: "[traceId=%X{traceId:-},spanId=%X{spanId:-}] "

@@ -1,0 +1,11 @@
+apiVersion: 1
+
+providers:
+  - name: JChatMind
+    orgId: 1
+    folder: JChatMind
+    type: file
+    disableDeletion: false
+    editable: true
+    options:
+      path: /etc/grafana/provisioning/dashboards/json

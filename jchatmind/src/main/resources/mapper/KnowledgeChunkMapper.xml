@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kama.jchatmind.mapper.KnowledgeChunkMapper">
+
+    <select id="hybridSearchWithRrf" resultType="java.util.LinkedHashMap">
+        <!-- 
+          第一路 (Dense): 基于 pgvector 的余弦距离进行 K-NN 召回。
+          计算 queryVector 和 embedding 的余弦距离（<=>），然后使用 row_number 提取 rank。
+        -->
+        WITH dense_search AS (
+            SELECT
+                id,
+                content,
+                row_number() OVER (ORDER BY embedding &lt;=&gt; #{queryVector}::vector) AS rank
+            FROM knowledge_chunk
+            ORDER BY embedding &lt;=&gt; #{queryVector}::vector
+            LIMIT #{k}
+        ),
+        <!-- 
+          第二路 (Sparse): 基于 PostgreSQL to_tsvector 的全文检索召回。
+          使用 pg 内置的简单中文分词 ts_rank 进行倒排匹配。
+        -->
+        sparse_search AS (
+            SELECT
+                id,
+                content,
+                row_number() OVER (ORDER BY ts_rank(to_tsvector('simple', content), plainto_tsquery('simple', #{queryText})) DESC) AS rank
+            FROM knowledge_chunk
+            WHERE to_tsvector('simple', content) @@ plainto_tsquery('simple', #{queryText})
+            ORDER BY ts_rank(to_tsvector('simple', content), plainto_tsquery('simple', #{queryText})) DESC
+            LIMIT #{k}
+        )
+        <!-- 
+          最后一步: RRF (Reciprocal Rank Fusion) 数据融合
+          公式: score = 1 / (60 + rank)
+        -->
+        SELECT
+            COALESCE(d.id, s.id) AS id,
+            COALESCE(d.content, s.content) AS content,
+            (COALESCE(1.0 / (60 + d.rank), 0.0) + COALESCE(1.0 / (60 + s.rank), 0.0)) AS rrf_score
+        FROM dense_search d
+        FULL OUTER JOIN sparse_search s ON d.id = s.id
+        ORDER BY rrf_score DESC
+        LIMIT #{k}
+    </select>
+
+</mapper>

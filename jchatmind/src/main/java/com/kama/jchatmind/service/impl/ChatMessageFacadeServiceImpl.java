@@ -12,7 +12,9 @@ import com.kama.jchatmind.model.request.UpdateChatMessageRequest;
 import com.kama.jchatmind.model.response.CreateChatMessageResponse;
 import com.kama.jchatmind.model.response.GetChatMessagesResponse;
 import com.kama.jchatmind.model.vo.ChatMessageVO;
+import com.kama.jchatmind.service.ChatMemoryService;
 import com.kama.jchatmind.service.ChatMessageFacadeService;
+import io.micrometer.observation.annotation.Observed;
 import lombok.AllArgsConstructor;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
@@ -28,6 +30,7 @@ public class ChatMessageFacadeServiceImpl implements ChatMessageFacadeService {
     private final ChatMessageMapper chatMessageMapper;
     private final ChatMessageConverter chatMessageConverter;
     private final ApplicationEventPublisher publisher;
+    private final ChatMemoryService chatMemoryService;
 
     @Override
     public GetChatMessagesResponse getChatMessagesBySessionId(String sessionId) {
@@ -50,7 +53,29 @@ public class ChatMessageFacadeServiceImpl implements ChatMessageFacadeService {
 
     @Override
     public List<ChatMessageDTO> getChatMessagesBySessionIdRecently(String sessionId, int limit) {
-        List<ChatMessage> chatMessages = chatMessageMapper.selectBySessionIdRecently(sessionId, limit);
+        List<ChatMessage> allMessages = chatMessageMapper.selectBySessionId(sessionId);
+        ChatMessage summary = allMessages.stream()
+            .filter(m -> "system".equals(m.getRole())
+                && m.getContent() != null
+                && m.getContent().startsWith("[MEMORY_SUMMARY]"))
+            .findFirst()
+            .orElse(null);
+
+        LocalDateTime summaryUpdatedAt = summary != null ? summary.getUpdatedAt() : null;
+        List<ChatMessage> postSummaryMessages = allMessages.stream()
+            .filter(m -> !("system".equals(m.getRole())
+                && m.getContent() != null
+                && m.getContent().startsWith("[MEMORY_SUMMARY]")))
+            .filter(m -> summaryUpdatedAt == null || m.getCreatedAt().isAfter(summaryUpdatedAt))
+            .toList();
+
+        int from = Math.max(0, postSummaryMessages.size() - limit);
+        List<ChatMessage> chatMessages = new ArrayList<>();
+        if (summary != null) {
+            chatMessages.add(summary);
+        }
+        chatMessages.addAll(postSummaryMessages.subList(from, postSummaryMessages.size()));
+
         List<ChatMessageDTO> result = new ArrayList<>();
         for (ChatMessage chatMessage : chatMessages) {
             try {
@@ -64,6 +89,7 @@ public class ChatMessageFacadeServiceImpl implements ChatMessageFacadeService {
     }
 
     @Override
+    @Observed(name = "chat.message.create", contextualName = "create-chat-message")
     public CreateChatMessageResponse createChatMessage(CreateChatMessageRequest request) {
         ChatMessage chatMessage = doCreateChatMessage(request);
         // 发布聊天通知事件
@@ -80,6 +106,7 @@ public class ChatMessageFacadeServiceImpl implements ChatMessageFacadeService {
     }
 
     @Override
+    @Observed(name = "chat.message.agent-create", contextualName = "agent-create-chat-message")
     public CreateChatMessageResponse createChatMessage(ChatMessageDTO chatMessageDTO) {
         ChatMessage chatMessage = doCreateChatMessage(chatMessageDTO);
         return CreateChatMessageResponse.builder()
@@ -88,6 +115,7 @@ public class ChatMessageFacadeServiceImpl implements ChatMessageFacadeService {
     }
 
     @Override
+    @Observed(name = "chat.message.agent-request", contextualName = "agent-create-chat-message-request")
     public CreateChatMessageResponse agentCreateChatMessage(CreateChatMessageRequest request) {
         ChatMessage chatMessage = doCreateChatMessage(request);
         // 和 createChatMessage 的区别在于，Agent 创建的 chatMessage 不需要发布事件
@@ -116,6 +144,11 @@ public class ChatMessageFacadeServiceImpl implements ChatMessageFacadeService {
             int result = chatMessageMapper.insert(chatMessage);
             if (result <= 0) {
                 throw new BizException("创建聊天消息失败");
+            }
+
+            // 仅在用户消息入库后触发压缩，避免 Assistant/Tool 阶段高频并发触发。
+            if ("user".equals(chatMessage.getRole())) {
+                chatMemoryService.triggerMemoryCompressionAsync(chatMessage.getSessionId());
             }
             return chatMessage;
         } catch (JsonProcessingException e) {
@@ -208,4 +241,3 @@ public class ChatMessageFacadeServiceImpl implements ChatMessageFacadeService {
         }
     }
 }
-

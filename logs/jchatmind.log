@@ -1,0 +1,1186 @@
+2026-03-28T13:15:52.049+08:00  INFO 68276 --- [jchatmind] [restartedMain] [traceId=,spanId=] c.kama.jchatmind.JchatmindApplication    : Starting JchatmindApplication using Java 17.0.18 with PID 68276 (/Users/dongmu/Downloads/java项目/JChatMind-main/jchatmind/target/classes started by dongmu in /Users/dongmu/Downloads/java项目/JChatMind-main)
+2026-03-28T13:15:52.051+08:00  INFO 68276 --- [jchatmind] [restartedMain] [traceId=,spanId=] c.kama.jchatmind.JchatmindApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-03-28T13:15:52.089+08:00  INFO 68276 --- [jchatmind] [restartedMain] [traceId=,spanId=] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-28T13:15:52.089+08:00  INFO 68276 --- [jchatmind] [restartedMain] [traceId=,spanId=] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-28T13:15:53.337+08:00  INFO 68276 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-28T13:15:53.347+08:00  INFO 68276 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-28T13:15:53.347+08:00  INFO 68276 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.49]
+2026-03-28T13:15:53.375+08:00  INFO 68276 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-28T13:15:53.375+08:00  INFO 68276 --- [jchatmind] [restartedMain] [traceId=,spanId=] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1286 ms
+2026-03-28T13:15:55.319+08:00  INFO 68276 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-28T13:15:55.332+08:00  INFO 68276 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
+2026-03-28T13:15:55.431+08:00  WARN 68276 --- [jchatmind] [restartedMain] [traceId=,spanId=] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-03-28T13:15:55.455+08:00  INFO 68276 --- [jchatmind] [restartedMain] [traceId=,spanId=] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-28T13:15:55.465+08:00 ERROR 68276 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-03-28T13:30:49.274+08:00  INFO 58841 --- [jchatmind] [restartedMain] [traceId=,spanId=] c.kama.jchatmind.JchatmindApplication    : Starting JchatmindApplication using Java 17.0.18 with PID 58841 (/Users/dongmu/Downloads/java项目/JChatMind-main/jchatmind/target/classes started by dongmu in /Users/dongmu/Downloads/java项目/JChatMind-main)
+2026-03-28T13:30:49.275+08:00  INFO 58841 --- [jchatmind] [restartedMain] [traceId=,spanId=] c.kama.jchatmind.JchatmindApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-03-28T13:30:49.300+08:00  INFO 58841 --- [jchatmind] [restartedMain] [traceId=,spanId=] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-28T13:30:49.300+08:00  INFO 58841 --- [jchatmind] [restartedMain] [traceId=,spanId=] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-28T13:30:50.504+08:00  INFO 58841 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-28T13:30:50.513+08:00  INFO 58841 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-28T13:30:50.514+08:00  INFO 58841 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.49]
+2026-03-28T13:30:50.541+08:00  INFO 58841 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-28T13:30:50.541+08:00  INFO 58841 --- [jchatmind] [restartedMain] [traceId=,spanId=] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1240 ms
+2026-03-28T13:30:52.021+08:00  INFO 58841 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-28T13:30:52.029+08:00  INFO 58841 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
+2026-03-28T13:30:52.083+08:00  WARN 58841 --- [jchatmind] [restartedMain] [traceId=,spanId=] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-03-28T13:30:52.101+08:00  INFO 58841 --- [jchatmind] [restartedMain] [traceId=,spanId=] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-28T13:30:52.112+08:00 ERROR 58841 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-03-28T13:33:11.601+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] c.kama.jchatmind.JchatmindApplication    : Starting JchatmindApplication using Java 17.0.18 with PID 73401 (/Users/dongmu/Downloads/java项目/JChatMind-main/jchatmind/target/classes started by dongmu in /Users/dongmu/Downloads/java项目/JChatMind-main)
+2026-03-28T13:33:11.602+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] c.kama.jchatmind.JchatmindApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-03-28T13:33:11.625+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-28T13:33:11.625+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-28T13:33:12.695+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-28T13:33:12.705+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-28T13:33:12.705+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.49]
+2026-03-28T13:33:12.726+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-28T13:33:12.726+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1101 ms
+2026-03-28T13:33:14.142+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-28T13:33:14.153+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
+2026-03-28T13:33:14.241+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-28T13:33:14.255+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] c.kama.jchatmind.JchatmindApplication    : Started JchatmindApplication in 2.877 seconds (process running for 3.147)
+2026-03-28T13:33:16.863+08:00  INFO 73401 --- [jchatmind] [http-nio-8080-exec-1] [traceId=,spanId=] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-28T13:33:16.863+08:00  INFO 73401 --- [jchatmind] [http-nio-8080-exec-1] [traceId=,spanId=] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-28T13:33:16.865+08:00  INFO 73401 --- [jchatmind] [http-nio-8080-exec-1] [traceId=,spanId=] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-28T13:33:37.375+08:00  INFO 73401 --- [jchatmind] [http-nio-8080-exec-2] [traceId=2e1f2371d3bd4bec0686b5e688a6d5aa,spanId=47ae306b3d18dafe] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-28T13:33:37.677+08:00  INFO 73401 --- [jchatmind] [http-nio-8080-exec-2] [traceId=2e1f2371d3bd4bec0686b5e688a6d5aa,spanId=47ae306b3d18dafe] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@79570bda
+2026-03-28T13:33:37.681+08:00  INFO 73401 --- [jchatmind] [http-nio-8080-exec-2] [traceId=2e1f2371d3bd4bec0686b5e688a6d5aa,spanId=47ae306b3d18dafe] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-28T13:33:50.608+08:00  INFO 73401 --- [jchatmind] [async-event-1] [traceId=484151b489c85ffd0318bd99329fc8b4,spanId=f84c8810c9996d88] c.k.jchatmind.service.ChatMemoryService  : Session [d236480e-7fbd-46c2-8348-5f544606e39c] 历史条数 21 已达阈值，启动异步记忆压缩流水线...
+2026-03-28T13:33:51.138+08:00  WARN 73401 --- [jchatmind] [async-event-1] [traceId=484151b489c85ffd0318bd99329fc8b4,spanId=2954600076ab2cf6] o.s.a.r.a.SpringAiRetryAutoConfiguration : Retry error. Retry count: 1, Exception: I/O error on POST request for "https://open.bigmodel.cn/api/paas/v4/chat/completions": Remote host terminated the handshake
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "https://open.bigmodel.cn/api/paas/v4/chat/completions": Remote host terminated the handshake
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.createResourceAccessException(DefaultRestClient.java:704) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:589) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:540) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:680) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:821) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:781) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:770) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.ai.zhipuai.api.ZhiPuAiApi.chatCompletionEntity(ZhiPuAiApi.java:183) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.ai.zhipuai.api.ZhiPuAiApi.chatCompletionEntity(ZhiPuAiApi.java:159) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.ai.zhipuai.ZhiPuAiChatModel.lambda$call$2(ZhiPuAiChatModel.java:264) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357) ~[spring-retry-2.0.12.jar:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:230) ~[spring-retry-2.0.12.jar:na]
+	at org.springframework.ai.zhipuai.ZhiPuAiChatModel.lambda$call$4(ZhiPuAiChatModel.java:264) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at io.micrometer.observation.Observation.observe(Observation.java:564) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at org.springframework.ai.zhipuai.ZhiPuAiChatModel.call(ZhiPuAiChatModel.java:261) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:54) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:114) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at io.micrometer.observation.Observation.observe(Observation.java:564) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:113) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.lambda$doGetObservableChatClientResponse$1(DefaultChatClient.java:521) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at io.micrometer.observation.Observation.observe(Observation.java:564) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:519) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:498) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.content(DefaultChatClient.java:493) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at com.kama.jchatmind.service.ChatMemoryService.callLLMToSummarize(ChatMemoryService.java:187) ~[classes/:na]
+	at com.kama.jchatmind.service.ChatMemoryService.triggerMemoryCompressionAsync(ChatMemoryService.java:150) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.2.14.jar:6.2.14]
+	at io.micrometer.observation.aop.ObservedAspect.lambda$observe$2(ObservedAspect.java:172) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.Observation.observeChecked(Observation.java:599) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.aop.ObservedAspect.observe(ObservedAspect.java:172) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.aop.ObservedAspect.ajc$inlineAccessMethod$io_micrometer_observation_aop_ObservedAspect$io_micrometer_observation_aop_ObservedAspect$observe(ObservedAspect.java:1) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.aop.ObservedAspect.observeMethod(ObservedAspect.java:143) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:114) ~[spring-aop-6.2.14.jar:6.2.14]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at io.micrometer.context.ContextSnapshot.lambda$wrap$0(ContextSnapshot.java:91) ~[context-propagation-1.1.3.jar:1.1.3]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+	at java.net.http/jdk.internal.net.http.common.SSLTube.checkForHandshake(SSLTube.java:595) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SSLTube$SSLSubscriberWrapper.onComplete(SSLTube.java:536) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper.checkCompletion(SubscriberWrapper.java:474) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper$DownstreamPusher.run1(SubscriberWrapper.java:334) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper$DownstreamPusher.run(SubscriberWrapper.java:259) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper.outgoing(SubscriberWrapper.java:232) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate$Reader.processData(SSLFlowDelegate.java:527) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate$Reader$ReaderDownstreamPusher.run(SSLFlowDelegate.java:282) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:na]
+	... 3 common frames omitted
+
+2026-03-28T13:33:53.511+08:00  WARN 73401 --- [jchatmind] [async-event-1] [traceId=484151b489c85ffd0318bd99329fc8b4,spanId=2954600076ab2cf6] o.s.a.r.a.SpringAiRetryAutoConfiguration : Retry error. Retry count: 2, Exception: I/O error on POST request for "https://open.bigmodel.cn/api/paas/v4/chat/completions": Remote host terminated the handshake
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "https://open.bigmodel.cn/api/paas/v4/chat/completions": Remote host terminated the handshake
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.createResourceAccessException(DefaultRestClient.java:704) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:589) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:540) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:680) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:821) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:781) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:770) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.ai.zhipuai.api.ZhiPuAiApi.chatCompletionEntity(ZhiPuAiApi.java:183) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.ai.zhipuai.api.ZhiPuAiApi.chatCompletionEntity(ZhiPuAiApi.java:159) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.ai.zhipuai.ZhiPuAiChatModel.lambda$call$2(ZhiPuAiChatModel.java:264) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357) ~[spring-retry-2.0.12.jar:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:230) ~[spring-retry-2.0.12.jar:na]
+	at org.springframework.ai.zhipuai.ZhiPuAiChatModel.lambda$call$4(ZhiPuAiChatModel.java:264) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at io.micrometer.observation.Observation.observe(Observation.java:564) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at org.springframework.ai.zhipuai.ZhiPuAiChatModel.call(ZhiPuAiChatModel.java:261) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:54) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:114) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at io.micrometer.observation.Observation.observe(Observation.java:564) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:113) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.lambda$doGetObservableChatClientResponse$1(DefaultChatClient.java:521) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at io.micrometer.observation.Observation.observe(Observation.java:564) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:519) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:498) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.content(DefaultChatClient.java:493) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at com.kama.jchatmind.service.ChatMemoryService.callLLMToSummarize(ChatMemoryService.java:187) ~[classes/:na]
+	at com.kama.jchatmind.service.ChatMemoryService.triggerMemoryCompressionAsync(ChatMemoryService.java:150) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.2.14.jar:6.2.14]
+	at io.micrometer.observation.aop.ObservedAspect.lambda$observe$2(ObservedAspect.java:172) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.Observation.observeChecked(Observation.java:599) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.aop.ObservedAspect.observe(ObservedAspect.java:172) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.aop.ObservedAspect.ajc$inlineAccessMethod$io_micrometer_observation_aop_ObservedAspect$io_micrometer_observation_aop_ObservedAspect$observe(ObservedAspect.java:1) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.aop.ObservedAspect.observeMethod(ObservedAspect.java:143) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:114) ~[spring-aop-6.2.14.jar:6.2.14]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at io.micrometer.context.ContextSnapshot.lambda$wrap$0(ContextSnapshot.java:91) ~[context-propagation-1.1.3.jar:1.1.3]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+	at java.net.http/jdk.internal.net.http.common.SSLTube.checkForHandshake(SSLTube.java:595) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SSLTube$SSLSubscriberWrapper.onComplete(SSLTube.java:536) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper.checkCompletion(SubscriberWrapper.java:474) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper$DownstreamPusher.run1(SubscriberWrapper.java:334) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper$DownstreamPusher.run(SubscriberWrapper.java:259) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper.outgoing(SubscriberWrapper.java:232) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate$Reader.processData(SSLFlowDelegate.java:527) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate$Reader$ReaderDownstreamPusher.run(SSLFlowDelegate.java:282) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:na]
+	... 3 common frames omitted
+
+2026-03-28T13:33:56.718+08:00  INFO 73401 --- [jchatmind] [async-event-2] [traceId=484151b489c85ffd0318bd99329fc8b4,spanId=fc7ccf1cbcfb5704] com.kama.jchatmind.agent.JChatMind       : 
+
+========== Tool Calling ==========
+[ToolCalling #1]
+- name      : KnowledgeTool
+- arguments : {"kbsId": "712900b9-94b9-4f6e-9034-a2665afd1f63", "query": "系统功能 模块设计 业务功能 用户管理 商品管理 订单管理"}
+=================================
+
+2026-03-28T13:33:58.589+08:00  INFO 73401 --- [jchatmind] [async-event-2] [traceId=484151b489c85ffd0318bd99329fc8b4,spanId=f60725b30d956a11] com.kama.jchatmind.agent.JChatMind       : 工具调用结果：工具KnowledgeTool的返回结果为："用途  ：   维护商品的多级分类。\nCREATE TABLE t_product_category (\n    id              UUID PRIMARY KEY DEFAULT gen_random_uuid(),\n    parent_id       UUID,\n    name            VARCHAR(128) NOT NULL,\n    code            VARCHAR(64) UNIQUE NOT NULL,\n    level           INT NOT NULL DEFAULT 1,\n    sort_order      INT NOT NULL DEFAULT 0,\n    created_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),\n    updated_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),\n    FOREIGN KEY (parent_id) REFERENCES t_product_category(id) ON DELETE SET NULL\n);\n\nCOMMENT ON TABLE t_product_category IS '商品类目表，支持多级分类';\n用途  ：   电商订单信息，用于关联评论（比如\"仅允许已购买用户评论\"）。\nCREATE TABLE t_order_header (\n    id              UUID PRIMARY KEY DEFAULT gen_random_uuid(),\n    order_no        VARCHAR(64) UNIQUE NOT NULL,\n    user_id         UUID NOT NULL,\n    status          VARCHAR(32) NOT NULL, -- created / paid / shipped / completed / canceled\n    total_amount    NUMERIC(12, 2) NOT NULL,\n    pay_amount      NUMERIC(12, 2) NOT NULL,\n    currency        VARCHAR(16) NOT NULL DEFAULT 'CNY',\n    metadata        JSONB,\n    created_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),\n    updated_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),\n    FOREIGN KEY (user_id) REFERENCES t_app_user(id) ON DELETE RESTRICT\n);\n\nCOMMENT ON TABLE t_order_header IS '订单主表';\n支撑电商核心业务：用户、商品、订单、支付、发货。\n支持用户对商品的评论与多维度分析（评价内容、评分等）。"
+2026-03-28T13:34:02.585+08:00  INFO 73401 --- [jchatmind] [async-event-2] [traceId=484151b489c85ffd0318bd99329fc8b4,spanId=a0b4fadbef68cd7c] com.kama.jchatmind.agent.JChatMind       : 
+
+========== Tool Calling ==========
+[ToolCalling #1]
+- name      : KnowledgeTool
+- arguments : {"kbsId": "712900b9-94b9-4f6e-9034-a2665afd1f63", "query": "系统架构 业务模块 功能描述 核心业务"}
+=================================
+
+2026-03-28T13:34:02.809+08:00  INFO 73401 --- [jchatmind] [async-event-2] [traceId=484151b489c85ffd0318bd99329fc8b4,spanId=18201e538a7482f3] com.kama.jchatmind.agent.JChatMind       : 工具调用结果：工具KnowledgeTool的返回结果为："\n用途  ：   电商订单信息，用于关联评论（比如\"仅允许已购买用户评论\"）。\nCREATE TABLE t_order_header (\n    id              UUID PRIMARY KEY DEFAULT gen_random_uuid(),\n    order_no        VARCHAR(64) UNIQUE NOT NULL,\n    user_id         UUID NOT NULL,\n    status          VARCHAR(32) NOT NULL, -- created / paid / shipped / completed / canceled\n    total_amount    NUMERIC(12, 2) NOT NULL,\n    pay_amount      NUMERIC(12, 2) NOT NULL,\n    currency        VARCHAR(16) NOT NULL DEFAULT 'CNY',\n    metadata        JSONB,\n    created_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),\n    updated_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),\n    FOREIGN KEY (user_id) REFERENCES t_app_user(id) ON DELETE RESTRICT\n);\n\nCOMMENT ON TABLE t_order_header IS '订单主表';\n用途  ：   维护商品的多级分类。\nCREATE TABLE t_product_category (\n    id              UUID PRIMARY KEY DEFAULT gen_random_uuid(),\n    parent_id       UUID,\n    name            VARCHAR(128) NOT NULL,\n    code            VARCHAR(64) UNIQUE NOT NULL,\n    level           INT NOT NULL DEFAULT 1,\n    sort_order      INT NOT NULL DEFAULT 0,\n    created_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),\n    updated_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),\n    FOREIGN KEY (parent_id) REFERENCES t_product_category(id) ON DELETE SET NULL\n);\n\nCOMMENT ON TABLE t_product_category IS '商品类目表，支持多级分类';"
+2026-03-28T13:34:03.909+08:00  WARN 73401 --- [jchatmind] [async-event-1] [traceId=484151b489c85ffd0318bd99329fc8b4,spanId=2954600076ab2cf6] o.s.a.r.a.SpringAiRetryAutoConfiguration : Retry error. Retry count: 3, Exception: I/O error on POST request for "https://open.bigmodel.cn/api/paas/v4/chat/completions": Remote host terminated the handshake
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "https://open.bigmodel.cn/api/paas/v4/chat/completions": Remote host terminated the handshake
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.createResourceAccessException(DefaultRestClient.java:704) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:589) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:540) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:680) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:821) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:781) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:770) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.ai.zhipuai.api.ZhiPuAiApi.chatCompletionEntity(ZhiPuAiApi.java:183) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.ai.zhipuai.api.ZhiPuAiApi.chatCompletionEntity(ZhiPuAiApi.java:159) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.ai.zhipuai.ZhiPuAiChatModel.lambda$call$2(ZhiPuAiChatModel.java:264) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357) ~[spring-retry-2.0.12.jar:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:230) ~[spring-retry-2.0.12.jar:na]
+	at org.springframework.ai.zhipuai.ZhiPuAiChatModel.lambda$call$4(ZhiPuAiChatModel.java:264) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at io.micrometer.observation.Observation.observe(Observation.java:564) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at org.springframework.ai.zhipuai.ZhiPuAiChatModel.call(ZhiPuAiChatModel.java:261) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:54) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:114) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at io.micrometer.observation.Observation.observe(Observation.java:564) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:113) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.lambda$doGetObservableChatClientResponse$1(DefaultChatClient.java:521) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at io.micrometer.observation.Observation.observe(Observation.java:564) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:519) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:498) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.content(DefaultChatClient.java:493) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at com.kama.jchatmind.service.ChatMemoryService.callLLMToSummarize(ChatMemoryService.java:187) ~[classes/:na]
+	at com.kama.jchatmind.service.ChatMemoryService.triggerMemoryCompressionAsync(ChatMemoryService.java:150) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.2.14.jar:6.2.14]
+	at io.micrometer.observation.aop.ObservedAspect.lambda$observe$2(ObservedAspect.java:172) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.Observation.observeChecked(Observation.java:599) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.aop.ObservedAspect.observe(ObservedAspect.java:172) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.aop.ObservedAspect.ajc$inlineAccessMethod$io_micrometer_observation_aop_ObservedAspect$io_micrometer_observation_aop_ObservedAspect$observe(ObservedAspect.java:1) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.aop.ObservedAspect.observeMethod(ObservedAspect.java:143) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:114) ~[spring-aop-6.2.14.jar:6.2.14]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at io.micrometer.context.ContextSnapshot.lambda$wrap$0(ContextSnapshot.java:91) ~[context-propagation-1.1.3.jar:1.1.3]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+	at java.net.http/jdk.internal.net.http.common.SSLTube.checkForHandshake(SSLTube.java:595) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SSLTube$SSLSubscriberWrapper.onComplete(SSLTube.java:536) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper.checkCompletion(SubscriberWrapper.java:474) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper$DownstreamPusher.run1(SubscriberWrapper.java:334) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper$DownstreamPusher.run(SubscriberWrapper.java:259) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper.outgoing(SubscriberWrapper.java:232) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate$Reader.processData(SSLFlowDelegate.java:527) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate$Reader$ReaderDownstreamPusher.run(SSLFlowDelegate.java:282) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:na]
+	... 3 common frames omitted
+
+2026-03-28T13:34:07.686+08:00  INFO 73401 --- [jchatmind] [async-event-2] [traceId=484151b489c85ffd0318bd99329fc8b4,spanId=176960a72a9e1d07] com.kama.jchatmind.agent.JChatMind       : 
+
+========== Tool Calling ==========
+[ToolCalling #1]
+- name      : KnowledgeTool
+- arguments : {"kbsId": "712900b9-94b9-4f6e-9034-a2665afd1f63", "query": "所有表结构 表名 说明 功能模块"}
+=================================
+
+2026-03-28T13:34:07.871+08:00  INFO 73401 --- [jchatmind] [async-event-2] [traceId=484151b489c85ffd0318bd99329fc8b4,spanId=f00cc418b218d29a] com.kama.jchatmind.agent.JChatMind       : 工具调用结果：工具KnowledgeTool的返回结果为："\n| 表名                          | 说明                 |   | --------------------------- | ------------------ |   |  t_app_user  | 用户表                |   |  t_role  | 角色表（管理员、客服等）       |   |  t_user_role  | 用户-角色关联表           |   |  t_product_category  | 商品类目               |   |  t_product  | 商品主表               |   |  t_product_category_relation  | 商品-类目多对多关联         |   |  t_order_header  | 订单主表               |   |  t_order_item  | 订单明细               |   |  t_payment  | 支付记录               |   |  t_shipment  | 发货记录               |   |  t_comment_topic  | 评论话题定义（“物流”、“质量”等） |   |  t_comment  |  评论表，核心分析对象  |   |  t_comment_topic_mapping  | 评论-话题关联表（多对多）      |   |  t_comment_summary_daily  | 评论日汇总表，用于加速统计      |   |  t_system_kv  | 系统配置 / 开关表         |\n---\n用途  ：   记录每个订单中的具体商品明细。评论可以关联到  t_order_item  ，方便分析「针对哪次购买的反馈」。\nCREATE TABLE t_order_item (\n    id              UUID PRIMARY KEY DEFAULT gen_random_uuid(),\n    order_id        UUID NOT NULL,\n    product_id      UUID NOT NULL,\n    product_name    VARCHAR(255) NOT NULL,\n    sku             VARCHAR(64) NOT NULL,\n    unit_price      NUMERIC(12, 2) NOT NULL,\n    quantity        INT NOT NULL,\n    line_amount     NUMERIC(12, 2) NOT NULL,\n    created_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),\n    updated_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),\n    FOREIGN KEY (order_id) REFERENCES t_order_header(id) ON DELETE CASCADE,\n    FOREIGN KEY (product_id) REFERENCES t_product(id) ON DELETE RESTRICT\n);\n\nCOMMENT ON TABLE t_order_item IS '订单明细表';"
+2026-03-28T13:34:41.895+08:00  INFO 73401 --- [jchatmind] [async-event-2] [traceId=484151b489c85ffd0318bd99329fc8b4,spanId=9055ab6522a6149c] com.kama.jchatmind.agent.JChatMind       : 
+
+[ToolCalling] 无工具调用
+2026-03-28T13:34:54.327+08:00  WARN 73401 --- [jchatmind] [async-event-1] [traceId=484151b489c85ffd0318bd99329fc8b4,spanId=2954600076ab2cf6] o.s.a.r.a.SpringAiRetryAutoConfiguration : Retry error. Retry count: 4, Exception: I/O error on POST request for "https://open.bigmodel.cn/api/paas/v4/chat/completions": Remote host terminated the handshake
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "https://open.bigmodel.cn/api/paas/v4/chat/completions": Remote host terminated the handshake
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.createResourceAccessException(DefaultRestClient.java:704) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:589) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:540) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:680) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:821) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:781) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:770) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.ai.zhipuai.api.ZhiPuAiApi.chatCompletionEntity(ZhiPuAiApi.java:183) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.ai.zhipuai.api.ZhiPuAiApi.chatCompletionEntity(ZhiPuAiApi.java:159) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.ai.zhipuai.ZhiPuAiChatModel.lambda$call$2(ZhiPuAiChatModel.java:264) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357) ~[spring-retry-2.0.12.jar:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:230) ~[spring-retry-2.0.12.jar:na]
+	at org.springframework.ai.zhipuai.ZhiPuAiChatModel.lambda$call$4(ZhiPuAiChatModel.java:264) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at io.micrometer.observation.Observation.observe(Observation.java:564) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at org.springframework.ai.zhipuai.ZhiPuAiChatModel.call(ZhiPuAiChatModel.java:261) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:54) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:114) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at io.micrometer.observation.Observation.observe(Observation.java:564) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:113) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.lambda$doGetObservableChatClientResponse$1(DefaultChatClient.java:521) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at io.micrometer.observation.Observation.observe(Observation.java:564) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:519) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:498) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.content(DefaultChatClient.java:493) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at com.kama.jchatmind.service.ChatMemoryService.callLLMToSummarize(ChatMemoryService.java:187) ~[classes/:na]
+	at com.kama.jchatmind.service.ChatMemoryService.triggerMemoryCompressionAsync(ChatMemoryService.java:150) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.2.14.jar:6.2.14]
+	at io.micrometer.observation.aop.ObservedAspect.lambda$observe$2(ObservedAspect.java:172) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.Observation.observeChecked(Observation.java:599) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.aop.ObservedAspect.observe(ObservedAspect.java:172) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.aop.ObservedAspect.ajc$inlineAccessMethod$io_micrometer_observation_aop_ObservedAspect$io_micrometer_observation_aop_ObservedAspect$observe(ObservedAspect.java:1) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.aop.ObservedAspect.observeMethod(ObservedAspect.java:143) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:114) ~[spring-aop-6.2.14.jar:6.2.14]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at io.micrometer.context.ContextSnapshot.lambda$wrap$0(ContextSnapshot.java:91) ~[context-propagation-1.1.3.jar:1.1.3]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+	at java.net.http/jdk.internal.net.http.common.SSLTube.checkForHandshake(SSLTube.java:595) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SSLTube$SSLSubscriberWrapper.onComplete(SSLTube.java:536) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper.checkCompletion(SubscriberWrapper.java:474) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper$DownstreamPusher.run1(SubscriberWrapper.java:334) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper$DownstreamPusher.run(SubscriberWrapper.java:259) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper.outgoing(SubscriberWrapper.java:232) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate$Reader.processData(SSLFlowDelegate.java:527) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate$Reader$ReaderDownstreamPusher.run(SSLFlowDelegate.java:282) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:na]
+	... 3 common frames omitted
+
+2026-03-28T13:37:54.685+08:00  WARN 73401 --- [jchatmind] [async-event-1] [traceId=484151b489c85ffd0318bd99329fc8b4,spanId=2954600076ab2cf6] o.s.a.r.a.SpringAiRetryAutoConfiguration : Retry error. Retry count: 5, Exception: I/O error on POST request for "https://open.bigmodel.cn/api/paas/v4/chat/completions": Remote host terminated the handshake
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "https://open.bigmodel.cn/api/paas/v4/chat/completions": Remote host terminated the handshake
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.createResourceAccessException(DefaultRestClient.java:704) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:589) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:540) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:680) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:821) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:781) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:770) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.ai.zhipuai.api.ZhiPuAiApi.chatCompletionEntity(ZhiPuAiApi.java:183) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.ai.zhipuai.api.ZhiPuAiApi.chatCompletionEntity(ZhiPuAiApi.java:159) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.ai.zhipuai.ZhiPuAiChatModel.lambda$call$2(ZhiPuAiChatModel.java:264) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357) ~[spring-retry-2.0.12.jar:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:230) ~[spring-retry-2.0.12.jar:na]
+	at org.springframework.ai.zhipuai.ZhiPuAiChatModel.lambda$call$4(ZhiPuAiChatModel.java:264) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at io.micrometer.observation.Observation.observe(Observation.java:564) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at org.springframework.ai.zhipuai.ZhiPuAiChatModel.call(ZhiPuAiChatModel.java:261) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:54) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:114) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at io.micrometer.observation.Observation.observe(Observation.java:564) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:113) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.lambda$doGetObservableChatClientResponse$1(DefaultChatClient.java:521) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at io.micrometer.observation.Observation.observe(Observation.java:564) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:519) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:498) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.content(DefaultChatClient.java:493) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at com.kama.jchatmind.service.ChatMemoryService.callLLMToSummarize(ChatMemoryService.java:187) ~[classes/:na]
+	at com.kama.jchatmind.service.ChatMemoryService.triggerMemoryCompressionAsync(ChatMemoryService.java:150) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.2.14.jar:6.2.14]
+	at io.micrometer.observation.aop.ObservedAspect.lambda$observe$2(ObservedAspect.java:172) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.Observation.observeChecked(Observation.java:599) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.aop.ObservedAspect.observe(ObservedAspect.java:172) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.aop.ObservedAspect.ajc$inlineAccessMethod$io_micrometer_observation_aop_ObservedAspect$io_micrometer_observation_aop_ObservedAspect$observe(ObservedAspect.java:1) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.aop.ObservedAspect.observeMethod(ObservedAspect.java:143) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:114) ~[spring-aop-6.2.14.jar:6.2.14]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at io.micrometer.context.ContextSnapshot.lambda$wrap$0(ContextSnapshot.java:91) ~[context-propagation-1.1.3.jar:1.1.3]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+	at java.net.http/jdk.internal.net.http.common.SSLTube.checkForHandshake(SSLTube.java:595) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SSLTube$SSLSubscriberWrapper.onComplete(SSLTube.java:536) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper.checkCompletion(SubscriberWrapper.java:474) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper$DownstreamPusher.run1(SubscriberWrapper.java:334) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper$DownstreamPusher.run(SubscriberWrapper.java:259) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper.outgoing(SubscriberWrapper.java:232) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate$Reader.processData(SSLFlowDelegate.java:527) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate$Reader$ReaderDownstreamPusher.run(SSLFlowDelegate.java:282) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:na]
+	... 3 common frames omitted
+
+2026-03-28T13:40:16.220+08:00  WARN 73401 --- [jchatmind] [http-nio-8080-exec-8] [traceId=d4c7ed0c91130df5d729d56eaee2ac7e,spanId=5c23181d4916ef1b] o.s.b.actuate.mail.MailHealthIndicator   : Mail health check failed
+
+jakarta.mail.MessagingException: Could not connect to SMTP host: smtp.qq.com, port: 465
+	at org.eclipse.angus.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2245) ~[jakarta.mail-2.0.5.jar:na]
+	at org.eclipse.angus.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:729) ~[jakarta.mail-2.0.5.jar:na]
+	at jakarta.mail.Service.connect(Service.java:345) ~[jakarta.mail-2.0.5.jar:na]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:480) ~[spring-context-support-6.2.14.jar:6.2.14]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.testConnection(JavaMailSenderImpl.java:360) ~[spring-context-support-6.2.14.jar:6.2.14]
+	at org.springframework.boot.actuate.mail.MailHealthIndicator.doHealthCheck(MailHealthIndicator.java:52) ~[spring-boot-actuator-3.5.8.jar:3.5.8]
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82) ~[spring-boot-actuator-3.5.8.jar:3.5.8]
+	at org.springframework.boot.actuate.health.HealthIndicator.getHealth(HealthIndicator.java:37) ~[spring-boot-actuator-3.5.8.jar:3.5.8]
+	at org.springframework.boot.actuate.health.HealthEndpointWebExtension.getHealth(HealthEndpointWebExtension.java:94) ~[spring-boot-actuator-3.5.8.jar:3.5.8]
+	at org.springframework.boot.actuate.health.HealthEndpointWebExtension.getHealth(HealthEndpointWebExtension.java:47) ~[spring-boot-actuator-3.5.8.jar:3.5.8]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getLoggedHealth(HealthEndpointSupport.java:172) ~[spring-boot-actuator-3.5.8.jar:3.5.8]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:145) ~[spring-boot-actuator-3.5.8.jar:3.5.8]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateContribution(HealthEndpointSupport.java:156) ~[spring-boot-actuator-3.5.8.jar:3.5.8]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:141) ~[spring-boot-actuator-3.5.8.jar:3.5.8]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:110) ~[spring-boot-actuator-3.5.8.jar:3.5.8]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:81) ~[spring-boot-actuator-3.5.8.jar:3.5.8]
+	at org.springframework.boot.actuate.health.HealthEndpointWebExtension.health(HealthEndpointWebExtension.java:80) ~[spring-boot-actuator-3.5.8.jar:3.5.8]
+	at org.springframework.boot.actuate.health.HealthEndpointWebExtension.health(HealthEndpointWebExtension.java:69) ~[spring-boot-actuator-3.5.8.jar:3.5.8]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281) ~[spring-core-6.2.14.jar:6.2.14]
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:74) ~[spring-boot-actuator-3.5.8.jar:3.5.8]
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60) ~[spring-boot-actuator-3.5.8.jar:3.5.8]
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$ServletWebOperationAdapter.handle(AbstractWebMvcEndpointHandlerMapping.java:327) ~[spring-boot-actuator-3.5.8.jar:3.5.8]
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(AbstractWebMvcEndpointHandlerMapping.java:434) ~[spring-boot-actuator-3.5.8.jar:3.5.8]
+	at jdk.internal.reflect.GeneratedMethodAccessor67.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.14.jar:6.2.14]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.14.jar:6.2.14]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.14.jar:6.2.14]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.14.jar:6.2.14]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.14.jar:6.2.14]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.14.jar:6.2.14]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.14.jar:6.2.14]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.14.jar:6.2.14]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.49.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.14.jar:6.2.14]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.49.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-10.1.49.jar:10.1.49]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.49.jar:10.1.49]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.49.jar:10.1.49]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.49.jar:10.1.49]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.49.jar:10.1.49]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.49.jar:10.1.49]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.49.jar:10.1.49]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.49.jar:10.1.49]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.49.jar:10.1.49]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.49.jar:10.1.49]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.49.jar:10.1.49]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.49.jar:10.1.49]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.49.jar:10.1.49]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.49.jar:10.1.49]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.49.jar:10.1.49]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-10.1.49.jar:10.1.49]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88) ~[tomcat-embed-core-10.1.49.jar:10.1.49]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.49.jar:10.1.49]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-10.1.49.jar:10.1.49]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-10.1.49.jar:10.1.49]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-10.1.49.jar:10.1.49]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-10.1.49.jar:10.1.49]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-10.1.49.jar:10.1.49]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.49.jar:10.1.49]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.49.jar:10.1.49]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774) ~[tomcat-embed-core-10.1.49.jar:10.1.49]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.49.jar:10.1.49]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973) ~[tomcat-embed-core-10.1.49.jar:10.1.49]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491) ~[tomcat-embed-core-10.1.49.jar:10.1.49]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.49.jar:10.1.49]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+	at java.base/sun.security.ssl.SSLSocketImpl.handleEOF(SSLSocketImpl.java:1719) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1518) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1425) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426) ~[na:na]
+	at org.eclipse.angus.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:662) ~[jakarta.mail-2.0.5.jar:na]
+	at org.eclipse.angus.mail.util.SocketFetcher.createSocket(SocketFetcher.java:409) ~[jakarta.mail-2.0.5.jar:na]
+	at org.eclipse.angus.mail.util.SocketFetcher.getSocket(SocketFetcher.java:243) ~[jakarta.mail-2.0.5.jar:na]
+	at org.eclipse.angus.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2193) ~[jakarta.mail-2.0.5.jar:na]
+	... 83 common frames omitted
+Caused by: java.io.EOFException: SSL peer shut down incorrectly
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:489) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:160) ~[na:na]
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:111) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1510) ~[na:na]
+	... 90 common frames omitted
+
+2026-03-28T13:40:43.271+08:00  INFO 73401 --- [jchatmind] [async-event-4] [traceId=acf79da0d1c751347d7e72d41f7a0f70,spanId=99e9c9c0048e651a] com.kama.jchatmind.agent.JChatMind       : 
+
+========== Tool Calling ==========
+[ToolCalling #1]
+- name      : KnowledgeTool
+- arguments : {"kbsId": "712900b9-94b9-4f6e-9034-a2665afd1f63", "query": "系统整体架构 核心功能模块 用户管理 商品管理 订单交易"}
+=================================
+
+2026-03-28T13:40:45.392+08:00  INFO 73401 --- [jchatmind] [async-event-4] [traceId=acf79da0d1c751347d7e72d41f7a0f70,spanId=9c49f123ced344ad] com.kama.jchatmind.agent.JChatMind       : 工具调用结果：工具KnowledgeTool的返回结果为："用途  ：   电商订单信息，用于关联评论（比如\"仅允许已购买用户评论\"）。\nCREATE TABLE t_order_header (\n    id              UUID PRIMARY KEY DEFAULT gen_random_uuid(),\n    order_no        VARCHAR(64) UNIQUE NOT NULL,\n    user_id         UUID NOT NULL,\n    status          VARCHAR(32) NOT NULL, -- created / paid / shipped / completed / canceled\n    total_amount    NUMERIC(12, 2) NOT NULL,\n    pay_amount      NUMERIC(12, 2) NOT NULL,\n    currency        VARCHAR(16) NOT NULL DEFAULT 'CNY',\n    metadata        JSONB,\n    created_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),\n    updated_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),\n    FOREIGN KEY (user_id) REFERENCES t_app_user(id) ON DELETE RESTRICT\n);\n\nCOMMENT ON TABLE t_order_header IS '订单主表';\n用途  ：   记录每个订单中的具体商品明细。评论可以关联到  t_order_item  ，方便分析「针对哪次购买的反馈」。\nCREATE TABLE t_order_item (\n    id              UUID PRIMARY KEY DEFAULT gen_random_uuid(),\n    order_id        UUID NOT NULL,\n    product_id      UUID NOT NULL,\n    product_name    VARCHAR(255) NOT NULL,\n    sku             VARCHAR(64) NOT NULL,\n    unit_price      NUMERIC(12, 2) NOT NULL,\n    quantity        INT NOT NULL,\n    line_amount     NUMERIC(12, 2) NOT NULL,\n    created_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),\n    updated_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),\n    FOREIGN KEY (order_id) REFERENCES t_order_header(id) ON DELETE CASCADE,\n    FOREIGN KEY (product_id) REFERENCES t_product(id) ON DELETE RESTRICT\n);\n\nCOMMENT ON TABLE t_order_item IS '订单明细表';\n用途  ：   商品主数据，评论与订单均需要关联到商品。\n字段要点  ：\nrating_avg  : 平均评分，冗余字段\nrating_count  : 参与评分的评论数量\nCREATE TABLE t_product (\n    id              UUID PRIMARY KEY DEFAULT gen_random_uuid(),\n    sku             VARCHAR(64) UNIQUE NOT NULL,\n    name            VARCHAR(255) NOT NULL,\n    subtitle        VARCHAR(255),\n    description     TEXT,\n    price           NUMERIC(12, 2) NOT NULL,\n    stock_quantity  INT NOT NULL DEFAULT 0,\n    status          VARCHAR(32) NOT NULL DEFAULT 'on_sale', -- on_sale / off_sale / deleted\n    rating_avg      NUMERIC(3, 2) DEFAULT 0.0,\n    rating_count    INT NOT NULL DEFAULT 0,\n    metadata        JSONB,\n    created_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),\n    updated_at      TIMESTAMPTZ NOT NULL DEFAULT NOW()\n);\n\nCOMMENT ON TABLE t_product IS '商品表：商品主数据';\nCOMMENT ON COLUMN t_product.rating_avg IS '商品平均评分（冗余，便于快速查询）';"
+2026-03-28T13:40:50.223+08:00  INFO 73401 --- [jchatmind] [async-event-4] [traceId=acf79da0d1c751347d7e72d41f7a0f70,spanId=4e6cd0141293c1a1] com.kama.jchatmind.agent.JChatMind       : 
+
+========== Tool Calling ==========
+[ToolCalling #1]
+- name      : KnowledgeTool
+- arguments : {"kbsId": "712900b9-94b9-4f6e-9034-a2665afd1f63", "query": "系统模块 业务模块 用户管理 商品管理 订单管理 库存管理 优惠券 支付 物流"}
+=================================
+
+2026-03-28T13:40:50.376+08:00  INFO 73401 --- [jchatmind] [async-event-4] [traceId=acf79da0d1c751347d7e72d41f7a0f70,spanId=cfbf95f265b6813b] com.kama.jchatmind.agent.JChatMind       : 工具调用结果：工具KnowledgeTool的返回结果为："用途  ：   维护商品的多级分类。\nCREATE TABLE t_product_category (\n    id              UUID PRIMARY KEY DEFAULT gen_random_uuid(),\n    parent_id       UUID,\n    name            VARCHAR(128) NOT NULL,\n    code            VARCHAR(64) UNIQUE NOT NULL,\n    level           INT NOT NULL DEFAULT 1,\n    sort_order      INT NOT NULL DEFAULT 0,\n    created_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),\n    updated_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),\n    FOREIGN KEY (parent_id) REFERENCES t_product_category(id) ON DELETE SET NULL\n);\n\nCOMMENT ON TABLE t_product_category IS '商品类目表，支持多级分类';\n用途  ：   电商订单信息，用于关联评论（比如\"仅允许已购买用户评论\"）。\nCREATE TABLE t_order_header (\n    id              UUID PRIMARY KEY DEFAULT gen_random_uuid(),\n    order_no        VARCHAR(64) UNIQUE NOT NULL,\n    user_id         UUID NOT NULL,\n    status          VARCHAR(32) NOT NULL, -- created / paid / shipped / completed / canceled\n    total_amount    NUMERIC(12, 2) NOT NULL,\n    pay_amount      NUMERIC(12, 2) NOT NULL,\n    currency        VARCHAR(16) NOT NULL DEFAULT 'CNY',\n    metadata        JSONB,\n    created_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),\n    updated_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),\n    FOREIGN KEY (user_id) REFERENCES t_app_user(id) ON DELETE RESTRICT\n);\n\nCOMMENT ON TABLE t_order_header IS '订单主表';\n用途  ：   记录每个订单中的具体商品明细。评论可以关联到  t_order_item  ，方便分析「针对哪次购买的反馈」。\nCREATE TABLE t_order_item (\n    id              UUID PRIMARY KEY DEFAULT gen_random_uuid(),\n    order_id        UUID NOT NULL,\n    product_id      UUID NOT NULL,\n    product_name    VARCHAR(255) NOT NULL,\n    sku             VARCHAR(64) NOT NULL,\n    unit_price      NUMERIC(12, 2) NOT NULL,\n    quantity        INT NOT NULL,\n    line_amount     NUMERIC(12, 2) NOT NULL,\n    created_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),\n    updated_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),\n    FOREIGN KEY (order_id) REFERENCES t_order_header(id) ON DELETE CASCADE,\n    FOREIGN KEY (product_id) REFERENCES t_product(id) ON DELETE RESTRICT\n);\n\nCOMMENT ON TABLE t_order_item IS '订单明细表';"
+2026-03-28T13:40:54.716+08:00  INFO 73401 --- [jchatmind] [async-event-4] [traceId=acf79da0d1c751347d7e72d41f7a0f70,spanId=129b104c3ede044d] com.kama.jchatmind.agent.JChatMind       : 
+
+========== Tool Calling ==========
+[ToolCalling #1]
+- name      : KnowledgeTool
+- arguments : {"kbsId": "712900b9-94b9-4f6e-9034-a2665afd1f63", "query": "用户管理 用户表 系统描述 电商系统 核心业务"}
+=================================
+
+2026-03-28T13:40:54.883+08:00  INFO 73401 --- [jchatmind] [async-event-4] [traceId=acf79da0d1c751347d7e72d41f7a0f70,spanId=06394be9a99f476f] com.kama.jchatmind.agent.JChatMind       : 工具调用结果：工具KnowledgeTool的返回结果为："用途  ：   存储系统用户（买家、卖家、运营、客服等）的基础信息。\n字段要点  ：\nid  : 用户主键 UUID\nemail  : 登录邮箱，唯一\nphone  : 手机号\ndisplay_name  : 显示昵称\nstatus  : 用户状态（active / blocked / deleted）\nmetadata  : 扩展信息（渠道、终端等）\nCREATE TABLE t_app_user (\n    id              UUID PRIMARY KEY DEFAULT gen_random_uuid(),\n    email           VARCHAR(255) UNIQUE NOT NULL,\n    phone           VARCHAR(32),\n    display_name    VARCHAR(128) NOT NULL,\n    password_hash   VARCHAR(255) NOT NULL,\n    status          VARCHAR(32) NOT NULL DEFAULT 'active', -- active / blocked / deleted\n    metadata        JSONB,\n    created_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),\n    updated_at      TIMESTAMPTZ NOT NULL DEFAULT NOW()\n);\n\nCOMMENT ON TABLE t_app_user IS '用户表：存储系统用户的基础信息';\nCOMMENT ON COLUMN t_app_user.email IS '登录邮箱，唯一';\nCOMMENT ON COLUMN t_app_user.display_name IS '用户显示昵称';\nCOMMENT ON COLUMN t_app_user.status IS '用户状态：active / blocked / deleted';\n用途  ：   维护商品的多级分类。\nCREATE TABLE t_product_category (\n    id              UUID PRIMARY KEY DEFAULT gen_random_uuid(),\n    parent_id       UUID,\n    name            VARCHAR(128) NOT NULL,\n    code            VARCHAR(64) UNIQUE NOT NULL,\n    level           INT NOT NULL DEFAULT 1,\n    sort_order      INT NOT NULL DEFAULT 0,\n    created_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),\n    updated_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),\n    FOREIGN KEY (parent_id) REFERENCES t_product_category(id) ON DELETE SET NULL\n);\n\nCOMMENT ON TABLE t_product_category IS '商品类目表，支持多级分类';\n用途  ：   电商订单信息，用于关联评论（比如\"仅允许已购买用户评论\"）。\nCREATE TABLE t_order_header (\n    id              UUID PRIMARY KEY DEFAULT gen_random_uuid(),\n    order_no        VARCHAR(64) UNIQUE NOT NULL,\n    user_id         UUID NOT NULL,\n    status          VARCHAR(32) NOT NULL, -- created / paid / shipped / completed / canceled\n    total_amount    NUMERIC(12, 2) NOT NULL,\n    pay_amount      NUMERIC(12, 2) NOT NULL,\n    currency        VARCHAR(16) NOT NULL DEFAULT 'CNY',\n    metadata        JSONB,\n    created_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),\n    updated_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),\n    FOREIGN KEY (user_id) REFERENCES t_app_user(id) ON DELETE RESTRICT\n);\n\nCOMMENT ON TABLE t_order_header IS '订单主表';"
+2026-03-28T13:40:55.033+08:00  WARN 73401 --- [jchatmind] [async-event-1] [traceId=484151b489c85ffd0318bd99329fc8b4,spanId=2954600076ab2cf6] o.s.a.r.a.SpringAiRetryAutoConfiguration : Retry error. Retry count: 6, Exception: I/O error on POST request for "https://open.bigmodel.cn/api/paas/v4/chat/completions": Remote host terminated the handshake
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "https://open.bigmodel.cn/api/paas/v4/chat/completions": Remote host terminated the handshake
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.createResourceAccessException(DefaultRestClient.java:704) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:589) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:540) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:680) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:821) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:781) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:770) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.ai.zhipuai.api.ZhiPuAiApi.chatCompletionEntity(ZhiPuAiApi.java:183) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.ai.zhipuai.api.ZhiPuAiApi.chatCompletionEntity(ZhiPuAiApi.java:159) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.ai.zhipuai.ZhiPuAiChatModel.lambda$call$2(ZhiPuAiChatModel.java:264) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357) ~[spring-retry-2.0.12.jar:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:230) ~[spring-retry-2.0.12.jar:na]
+	at org.springframework.ai.zhipuai.ZhiPuAiChatModel.lambda$call$4(ZhiPuAiChatModel.java:264) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at io.micrometer.observation.Observation.observe(Observation.java:564) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at org.springframework.ai.zhipuai.ZhiPuAiChatModel.call(ZhiPuAiChatModel.java:261) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:54) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:114) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at io.micrometer.observation.Observation.observe(Observation.java:564) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:113) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.lambda$doGetObservableChatClientResponse$1(DefaultChatClient.java:521) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at io.micrometer.observation.Observation.observe(Observation.java:564) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:519) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:498) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.content(DefaultChatClient.java:493) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at com.kama.jchatmind.service.ChatMemoryService.callLLMToSummarize(ChatMemoryService.java:187) ~[classes/:na]
+	at com.kama.jchatmind.service.ChatMemoryService.triggerMemoryCompressionAsync(ChatMemoryService.java:150) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.2.14.jar:6.2.14]
+	at io.micrometer.observation.aop.ObservedAspect.lambda$observe$2(ObservedAspect.java:172) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.Observation.observeChecked(Observation.java:599) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.aop.ObservedAspect.observe(ObservedAspect.java:172) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.aop.ObservedAspect.ajc$inlineAccessMethod$io_micrometer_observation_aop_ObservedAspect$io_micrometer_observation_aop_ObservedAspect$observe(ObservedAspect.java:1) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.aop.ObservedAspect.observeMethod(ObservedAspect.java:143) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:114) ~[spring-aop-6.2.14.jar:6.2.14]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at io.micrometer.context.ContextSnapshot.lambda$wrap$0(ContextSnapshot.java:91) ~[context-propagation-1.1.3.jar:1.1.3]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+	at java.net.http/jdk.internal.net.http.common.SSLTube.checkForHandshake(SSLTube.java:595) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SSLTube$SSLSubscriberWrapper.onComplete(SSLTube.java:536) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper.checkCompletion(SubscriberWrapper.java:474) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper$DownstreamPusher.run1(SubscriberWrapper.java:334) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper$DownstreamPusher.run(SubscriberWrapper.java:259) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper.outgoing(SubscriberWrapper.java:232) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate$Reader.processData(SSLFlowDelegate.java:527) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate$Reader$ReaderDownstreamPusher.run(SSLFlowDelegate.java:282) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:na]
+	... 3 common frames omitted
+
+2026-03-28T13:41:05.696+08:00  INFO 73401 --- [jchatmind] [async-event-4] [traceId=acf79da0d1c751347d7e72d41f7a0f70,spanId=5b4c2a047f0cda62] com.kama.jchatmind.agent.JChatMind       : 
+
+========== Tool Calling ==========
+[ToolCalling #1]
+- name      : terminate
+- arguments : {}
+=================================
+
+2026-03-28T13:41:05.697+08:00  INFO 73401 --- [jchatmind] [async-event-4] [traceId=acf79da0d1c751347d7e72d41f7a0f70,spanId=c46f2941357a8009] com.kama.jchatmind.agent.JChatMind       : 工具调用结果：工具terminate的返回结果为："Done"
+2026-03-28T13:41:05.700+08:00  INFO 73401 --- [jchatmind] [async-event-4] [traceId=acf79da0d1c751347d7e72d41f7a0f70,spanId=c46f2941357a8009] com.kama.jchatmind.agent.JChatMind       : 任务结束
+2026-03-28T13:43:55.375+08:00  WARN 73401 --- [jchatmind] [async-event-1] [traceId=484151b489c85ffd0318bd99329fc8b4,spanId=2954600076ab2cf6] o.s.a.r.a.SpringAiRetryAutoConfiguration : Retry error. Retry count: 7, Exception: I/O error on POST request for "https://open.bigmodel.cn/api/paas/v4/chat/completions": Remote host terminated the handshake
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "https://open.bigmodel.cn/api/paas/v4/chat/completions": Remote host terminated the handshake
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.createResourceAccessException(DefaultRestClient.java:704) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:589) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:540) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:680) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:821) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:781) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:770) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.ai.zhipuai.api.ZhiPuAiApi.chatCompletionEntity(ZhiPuAiApi.java:183) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.ai.zhipuai.api.ZhiPuAiApi.chatCompletionEntity(ZhiPuAiApi.java:159) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.ai.zhipuai.ZhiPuAiChatModel.lambda$call$2(ZhiPuAiChatModel.java:264) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357) ~[spring-retry-2.0.12.jar:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:230) ~[spring-retry-2.0.12.jar:na]
+	at org.springframework.ai.zhipuai.ZhiPuAiChatModel.lambda$call$4(ZhiPuAiChatModel.java:264) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at io.micrometer.observation.Observation.observe(Observation.java:564) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at org.springframework.ai.zhipuai.ZhiPuAiChatModel.call(ZhiPuAiChatModel.java:261) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:54) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:114) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at io.micrometer.observation.Observation.observe(Observation.java:564) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:113) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.lambda$doGetObservableChatClientResponse$1(DefaultChatClient.java:521) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at io.micrometer.observation.Observation.observe(Observation.java:564) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:519) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:498) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.content(DefaultChatClient.java:493) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at com.kama.jchatmind.service.ChatMemoryService.callLLMToSummarize(ChatMemoryService.java:187) ~[classes/:na]
+	at com.kama.jchatmind.service.ChatMemoryService.triggerMemoryCompressionAsync(ChatMemoryService.java:150) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.2.14.jar:6.2.14]
+	at io.micrometer.observation.aop.ObservedAspect.lambda$observe$2(ObservedAspect.java:172) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.Observation.observeChecked(Observation.java:599) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.aop.ObservedAspect.observe(ObservedAspect.java:172) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.aop.ObservedAspect.ajc$inlineAccessMethod$io_micrometer_observation_aop_ObservedAspect$io_micrometer_observation_aop_ObservedAspect$observe(ObservedAspect.java:1) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.aop.ObservedAspect.observeMethod(ObservedAspect.java:143) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:114) ~[spring-aop-6.2.14.jar:6.2.14]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at io.micrometer.context.ContextSnapshot.lambda$wrap$0(ContextSnapshot.java:91) ~[context-propagation-1.1.3.jar:1.1.3]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+	at java.net.http/jdk.internal.net.http.common.SSLTube.checkForHandshake(SSLTube.java:595) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SSLTube$SSLSubscriberWrapper.onComplete(SSLTube.java:536) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper.checkCompletion(SubscriberWrapper.java:474) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper$DownstreamPusher.run1(SubscriberWrapper.java:334) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper$DownstreamPusher.run(SubscriberWrapper.java:259) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper.outgoing(SubscriberWrapper.java:232) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate$Reader.processData(SSLFlowDelegate.java:527) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate$Reader$ReaderDownstreamPusher.run(SSLFlowDelegate.java:282) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:na]
+	... 3 common frames omitted
+
+2026-03-28T13:46:55.721+08:00  WARN 73401 --- [jchatmind] [async-event-1] [traceId=484151b489c85ffd0318bd99329fc8b4,spanId=2954600076ab2cf6] o.s.a.r.a.SpringAiRetryAutoConfiguration : Retry error. Retry count: 8, Exception: I/O error on POST request for "https://open.bigmodel.cn/api/paas/v4/chat/completions": Remote host terminated the handshake
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "https://open.bigmodel.cn/api/paas/v4/chat/completions": Remote host terminated the handshake
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.createResourceAccessException(DefaultRestClient.java:704) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:589) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:540) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:680) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:821) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:781) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:770) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.ai.zhipuai.api.ZhiPuAiApi.chatCompletionEntity(ZhiPuAiApi.java:183) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.ai.zhipuai.api.ZhiPuAiApi.chatCompletionEntity(ZhiPuAiApi.java:159) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.ai.zhipuai.ZhiPuAiChatModel.lambda$call$2(ZhiPuAiChatModel.java:264) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357) ~[spring-retry-2.0.12.jar:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:230) ~[spring-retry-2.0.12.jar:na]
+	at org.springframework.ai.zhipuai.ZhiPuAiChatModel.lambda$call$4(ZhiPuAiChatModel.java:264) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at io.micrometer.observation.Observation.observe(Observation.java:564) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at org.springframework.ai.zhipuai.ZhiPuAiChatModel.call(ZhiPuAiChatModel.java:261) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:54) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:114) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at io.micrometer.observation.Observation.observe(Observation.java:564) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:113) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.lambda$doGetObservableChatClientResponse$1(DefaultChatClient.java:521) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at io.micrometer.observation.Observation.observe(Observation.java:564) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:519) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:498) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.content(DefaultChatClient.java:493) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at com.kama.jchatmind.service.ChatMemoryService.callLLMToSummarize(ChatMemoryService.java:187) ~[classes/:na]
+	at com.kama.jchatmind.service.ChatMemoryService.triggerMemoryCompressionAsync(ChatMemoryService.java:150) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.2.14.jar:6.2.14]
+	at io.micrometer.observation.aop.ObservedAspect.lambda$observe$2(ObservedAspect.java:172) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.Observation.observeChecked(Observation.java:599) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.aop.ObservedAspect.observe(ObservedAspect.java:172) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.aop.ObservedAspect.ajc$inlineAccessMethod$io_micrometer_observation_aop_ObservedAspect$io_micrometer_observation_aop_ObservedAspect$observe(ObservedAspect.java:1) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.aop.ObservedAspect.observeMethod(ObservedAspect.java:143) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:114) ~[spring-aop-6.2.14.jar:6.2.14]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at io.micrometer.context.ContextSnapshot.lambda$wrap$0(ContextSnapshot.java:91) ~[context-propagation-1.1.3.jar:1.1.3]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+	at java.net.http/jdk.internal.net.http.common.SSLTube.checkForHandshake(SSLTube.java:595) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SSLTube$SSLSubscriberWrapper.onComplete(SSLTube.java:536) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper.checkCompletion(SubscriberWrapper.java:474) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper$DownstreamPusher.run1(SubscriberWrapper.java:334) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper$DownstreamPusher.run(SubscriberWrapper.java:259) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper.outgoing(SubscriberWrapper.java:232) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate$Reader.processData(SSLFlowDelegate.java:527) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate$Reader$ReaderDownstreamPusher.run(SSLFlowDelegate.java:282) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:na]
+	... 3 common frames omitted
+
+2026-03-28T13:49:56.126+08:00  WARN 73401 --- [jchatmind] [async-event-1] [traceId=484151b489c85ffd0318bd99329fc8b4,spanId=2954600076ab2cf6] o.s.a.r.a.SpringAiRetryAutoConfiguration : Retry error. Retry count: 9, Exception: I/O error on POST request for "https://open.bigmodel.cn/api/paas/v4/chat/completions": Remote host terminated the handshake
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "https://open.bigmodel.cn/api/paas/v4/chat/completions": Remote host terminated the handshake
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.createResourceAccessException(DefaultRestClient.java:704) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:589) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:540) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:680) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:821) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:781) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:770) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.ai.zhipuai.api.ZhiPuAiApi.chatCompletionEntity(ZhiPuAiApi.java:183) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.ai.zhipuai.api.ZhiPuAiApi.chatCompletionEntity(ZhiPuAiApi.java:159) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.ai.zhipuai.ZhiPuAiChatModel.lambda$call$2(ZhiPuAiChatModel.java:264) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357) ~[spring-retry-2.0.12.jar:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:230) ~[spring-retry-2.0.12.jar:na]
+	at org.springframework.ai.zhipuai.ZhiPuAiChatModel.lambda$call$4(ZhiPuAiChatModel.java:264) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at io.micrometer.observation.Observation.observe(Observation.java:564) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at org.springframework.ai.zhipuai.ZhiPuAiChatModel.call(ZhiPuAiChatModel.java:261) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:54) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:114) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at io.micrometer.observation.Observation.observe(Observation.java:564) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:113) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.lambda$doGetObservableChatClientResponse$1(DefaultChatClient.java:521) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at io.micrometer.observation.Observation.observe(Observation.java:564) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:519) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:498) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.content(DefaultChatClient.java:493) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at com.kama.jchatmind.service.ChatMemoryService.callLLMToSummarize(ChatMemoryService.java:187) ~[classes/:na]
+	at com.kama.jchatmind.service.ChatMemoryService.triggerMemoryCompressionAsync(ChatMemoryService.java:150) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.2.14.jar:6.2.14]
+	at io.micrometer.observation.aop.ObservedAspect.lambda$observe$2(ObservedAspect.java:172) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.Observation.observeChecked(Observation.java:599) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.aop.ObservedAspect.observe(ObservedAspect.java:172) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.aop.ObservedAspect.ajc$inlineAccessMethod$io_micrometer_observation_aop_ObservedAspect$io_micrometer_observation_aop_ObservedAspect$observe(ObservedAspect.java:1) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.aop.ObservedAspect.observeMethod(ObservedAspect.java:143) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:114) ~[spring-aop-6.2.14.jar:6.2.14]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at io.micrometer.context.ContextSnapshot.lambda$wrap$0(ContextSnapshot.java:91) ~[context-propagation-1.1.3.jar:1.1.3]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+	at java.net.http/jdk.internal.net.http.common.SSLTube.checkForHandshake(SSLTube.java:595) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SSLTube$SSLSubscriberWrapper.onComplete(SSLTube.java:536) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper.checkCompletion(SubscriberWrapper.java:474) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper$DownstreamPusher.run1(SubscriberWrapper.java:334) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper$DownstreamPusher.run(SubscriberWrapper.java:259) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper.outgoing(SubscriberWrapper.java:232) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate$Reader.processData(SSLFlowDelegate.java:527) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate$Reader$ReaderDownstreamPusher.run(SSLFlowDelegate.java:282) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:na]
+	... 3 common frames omitted
+
+2026-03-28T13:52:56.466+08:00  WARN 73401 --- [jchatmind] [async-event-1] [traceId=484151b489c85ffd0318bd99329fc8b4,spanId=2954600076ab2cf6] o.s.a.r.a.SpringAiRetryAutoConfiguration : Retry error. Retry count: 10, Exception: I/O error on POST request for "https://open.bigmodel.cn/api/paas/v4/chat/completions": Remote host terminated the handshake
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "https://open.bigmodel.cn/api/paas/v4/chat/completions": Remote host terminated the handshake
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.createResourceAccessException(DefaultRestClient.java:704) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:589) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:540) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:680) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:821) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:781) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:770) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.ai.zhipuai.api.ZhiPuAiApi.chatCompletionEntity(ZhiPuAiApi.java:183) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.ai.zhipuai.api.ZhiPuAiApi.chatCompletionEntity(ZhiPuAiApi.java:159) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.ai.zhipuai.ZhiPuAiChatModel.lambda$call$2(ZhiPuAiChatModel.java:264) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357) ~[spring-retry-2.0.12.jar:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:230) ~[spring-retry-2.0.12.jar:na]
+	at org.springframework.ai.zhipuai.ZhiPuAiChatModel.lambda$call$4(ZhiPuAiChatModel.java:264) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at io.micrometer.observation.Observation.observe(Observation.java:564) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at org.springframework.ai.zhipuai.ZhiPuAiChatModel.call(ZhiPuAiChatModel.java:261) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:54) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:114) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at io.micrometer.observation.Observation.observe(Observation.java:564) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:113) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.lambda$doGetObservableChatClientResponse$1(DefaultChatClient.java:521) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at io.micrometer.observation.Observation.observe(Observation.java:564) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:519) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:498) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.content(DefaultChatClient.java:493) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at com.kama.jchatmind.service.ChatMemoryService.callLLMToSummarize(ChatMemoryService.java:187) ~[classes/:na]
+	at com.kama.jchatmind.service.ChatMemoryService.triggerMemoryCompressionAsync(ChatMemoryService.java:150) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.2.14.jar:6.2.14]
+	at io.micrometer.observation.aop.ObservedAspect.lambda$observe$2(ObservedAspect.java:172) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.Observation.observeChecked(Observation.java:599) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.aop.ObservedAspect.observe(ObservedAspect.java:172) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.aop.ObservedAspect.ajc$inlineAccessMethod$io_micrometer_observation_aop_ObservedAspect$io_micrometer_observation_aop_ObservedAspect$observe(ObservedAspect.java:1) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.aop.ObservedAspect.observeMethod(ObservedAspect.java:143) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:114) ~[spring-aop-6.2.14.jar:6.2.14]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at io.micrometer.context.ContextSnapshot.lambda$wrap$0(ContextSnapshot.java:91) ~[context-propagation-1.1.3.jar:1.1.3]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+	at java.net.http/jdk.internal.net.http.common.SSLTube.checkForHandshake(SSLTube.java:595) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SSLTube$SSLSubscriberWrapper.onComplete(SSLTube.java:536) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper.checkCompletion(SubscriberWrapper.java:474) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper$DownstreamPusher.run1(SubscriberWrapper.java:334) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper$DownstreamPusher.run(SubscriberWrapper.java:259) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper.outgoing(SubscriberWrapper.java:232) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate$Reader.processData(SSLFlowDelegate.java:527) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate$Reader$ReaderDownstreamPusher.run(SSLFlowDelegate.java:282) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:na]
+	... 3 common frames omitted
+
+2026-03-28T13:52:56.473+08:00 ERROR 73401 --- [jchatmind] [async-event-1] [traceId=484151b489c85ffd0318bd99329fc8b4,spanId=f84c8810c9996d88] c.k.jchatmind.service.ChatMemoryService  : 调用记忆总结模型失败，回退为模拟摘要
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "https://open.bigmodel.cn/api/paas/v4/chat/completions": Remote host terminated the handshake
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.createResourceAccessException(DefaultRestClient.java:704) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:589) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:540) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:680) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:821) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:781) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:770) ~[spring-web-6.2.14.jar:6.2.14]
+	at org.springframework.ai.zhipuai.api.ZhiPuAiApi.chatCompletionEntity(ZhiPuAiApi.java:183) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.ai.zhipuai.api.ZhiPuAiApi.chatCompletionEntity(ZhiPuAiApi.java:159) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.ai.zhipuai.ZhiPuAiChatModel.lambda$call$2(ZhiPuAiChatModel.java:264) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357) ~[spring-retry-2.0.12.jar:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:230) ~[spring-retry-2.0.12.jar:na]
+	at org.springframework.ai.zhipuai.ZhiPuAiChatModel.lambda$call$4(ZhiPuAiChatModel.java:264) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at io.micrometer.observation.Observation.observe(Observation.java:564) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at org.springframework.ai.zhipuai.ZhiPuAiChatModel.call(ZhiPuAiChatModel.java:261) ~[spring-ai-zhipuai-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.advisor.ChatModelCallAdvisor.adviseCall(ChatModelCallAdvisor.java:54) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextCall$1(DefaultAroundAdvisorChain.java:114) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at io.micrometer.observation.Observation.observe(Observation.java:564) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.nextCall(DefaultAroundAdvisorChain.java:113) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.lambda$doGetObservableChatClientResponse$1(DefaultChatClient.java:521) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at io.micrometer.observation.Observation.observe(Observation.java:564) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:519) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.doGetObservableChatClientResponse(DefaultChatClient.java:498) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at org.springframework.ai.chat.client.DefaultChatClient$DefaultCallResponseSpec.content(DefaultChatClient.java:493) ~[spring-ai-client-chat-1.1.0.jar:1.1.0]
+	at com.kama.jchatmind.service.ChatMemoryService.callLLMToSummarize(ChatMemoryService.java:187) ~[classes/:na]
+	at com.kama.jchatmind.service.ChatMemoryService.triggerMemoryCompressionAsync(ChatMemoryService.java:150) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.2.14.jar:6.2.14]
+	at io.micrometer.observation.aop.ObservedAspect.lambda$observe$2(ObservedAspect.java:172) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.Observation.observeChecked(Observation.java:599) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.aop.ObservedAspect.observe(ObservedAspect.java:172) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.aop.ObservedAspect.ajc$inlineAccessMethod$io_micrometer_observation_aop_ObservedAspect$io_micrometer_observation_aop_ObservedAspect$observe(ObservedAspect.java:1) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at io.micrometer.observation.aop.ObservedAspect.observeMethod(ObservedAspect.java:143) ~[micrometer-observation-1.15.6.jar:1.15.6]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.14.jar:6.2.14]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:114) ~[spring-aop-6.2.14.jar:6.2.14]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at io.micrometer.context.ContextSnapshot.lambda$wrap$0(ContextSnapshot.java:91) ~[context-propagation-1.1.3.jar:1.1.3]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+	at java.net.http/jdk.internal.net.http.common.SSLTube.checkForHandshake(SSLTube.java:595) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SSLTube$SSLSubscriberWrapper.onComplete(SSLTube.java:536) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper.checkCompletion(SubscriberWrapper.java:474) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper$DownstreamPusher.run1(SubscriberWrapper.java:334) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper$DownstreamPusher.run(SubscriberWrapper.java:259) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper.outgoing(SubscriberWrapper.java:232) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate$Reader.processData(SSLFlowDelegate.java:527) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate$Reader$ReaderDownstreamPusher.run(SSLFlowDelegate.java:282) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:na]
+	... 3 common frames omitted
+
+2026-03-28T13:52:56.506+08:00  INFO 73401 --- [jchatmind] [async-event-1] [traceId=484151b489c85ffd0318bd99329fc8b4,spanId=f84c8810c9996d88] c.k.jchatmind.service.ChatMemoryService  : Session [d236480e-7fbd-46c2-8348-5f544606e39c] 记忆压缩完成！已将 17 条老旧对话提炼为长期记忆
+2026-03-28T14:03:17.293+08:00  WARN 73401 --- [jchatmind] [http-nio-8080-exec-8] [traceId=24c16cee3f4e8ea4d4b537092b999151,spanId=4e4253bc0590f291] c.k.j.exception.GlobalExceptionHandler   : Async request timeout
+2026-03-28T14:03:17.295+08:00  WARN 73401 --- [jchatmind] [http-nio-8080-exec-8] [traceId=24c16cee3f4e8ea4d4b537092b999151,spanId=4e4253bc0590f291] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-03-28T14:03:38.255+08:00  WARN 73401 --- [jchatmind] [http-nio-8080-exec-6] [traceId=e18966dbfc766e60505799e34d1f3711,spanId=51e41e34307313f2] c.k.j.exception.GlobalExceptionHandler   : Async request timeout
+2026-03-28T14:03:38.256+08:00  WARN 73401 --- [jchatmind] [http-nio-8080-exec-6] [traceId=e18966dbfc766e60505799e34d1f3711,spanId=51e41e34307313f2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-03-28T14:03:41.808+08:00  INFO 73401 --- [jchatmind] [File Watcher] [traceId=,spanId=] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-03-28T14:03:41.817+08:00  INFO 73401 --- [jchatmind] [Thread-5] [traceId=,spanId=] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-28T14:03:43.834+08:00 ERROR 73401 --- [jchatmind] [http-nio-8080-Acceptor] [traceId=,spanId=] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
+
+java.nio.channels.AsynchronousCloseException: null
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:376) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:535) ~[tomcat-embed-core-10.1.49.jar:10.1.49]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:70) ~[tomcat-embed-core-10.1.49.jar:10.1.49]
+	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:127) ~[tomcat-embed-core-10.1.49.jar:10.1.49]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2026-03-28T14:04:13.847+08:00  INFO 73401 --- [jchatmind] [Thread-5] [traceId=,spanId=] o.s.c.support.DefaultLifecycleProcessor  : Shutdown phase 2147482623 ends with 1 bean still running after timeout of 30000ms: [webServerGracefulShutdown]
+2026-03-28T14:04:13.854+08:00  INFO 73401 --- [jchatmind] [tomcat-shutdown] [traceId=,spanId=] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown aborted with one or more requests still active
+2026-03-28T14:04:13.861+08:00  WARN 73401 --- [jchatmind] [http-nio-8080-exec-3] [traceId=,spanId=] c.k.j.exception.GlobalExceptionHandler   : Async request timeout
+2026-03-28T14:04:13.866+08:00  WARN 73401 --- [jchatmind] [http-nio-8080-exec-3] [traceId=,spanId=] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-03-28T14:04:13.887+08:00  INFO 73401 --- [jchatmind] [Thread-5] [traceId=,spanId=] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-28T14:04:13.890+08:00  INFO 73401 --- [jchatmind] [Thread-5] [traceId=,spanId=] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-28T14:04:16.033+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] c.kama.jchatmind.JchatmindApplication    : Starting JchatmindApplication using Java 17.0.18 with PID 73401 (/Users/dongmu/Downloads/java项目/JChatMind-main/jchatmind/target/classes started by dongmu in /Users/dongmu/Downloads/java项目/JChatMind-main)
+2026-03-28T14:04:16.033+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] c.kama.jchatmind.JchatmindApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-03-28T14:04:16.426+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-28T14:04:16.427+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-28T14:04:16.427+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.49]
+2026-03-28T14:04:16.434+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-28T14:04:16.434+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 400 ms
+2026-03-28T14:04:16.970+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-28T14:04:16.973+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
+2026-03-28T14:04:16.987+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-28T14:04:16.992+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] c.kama.jchatmind.JchatmindApplication    : Started JchatmindApplication in 0.98 seconds (process running for 1865.866)
+2026-03-28T14:04:16.993+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-28T14:04:18.383+08:00  INFO 73401 --- [jchatmind] [File Watcher] [traceId=,spanId=] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-03-28T14:04:18.384+08:00  INFO 73401 --- [jchatmind] [Thread-7] [traceId=,spanId=] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-28T14:04:20.395+08:00  INFO 73401 --- [jchatmind] [tomcat-shutdown] [traceId=,spanId=] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-28T14:04:20.395+08:00 ERROR 73401 --- [jchatmind] [http-nio-8080-Acceptor] [traceId=,spanId=] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
+
+java.nio.channels.AsynchronousCloseException: null
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:376) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:535) ~[tomcat-embed-core-10.1.49.jar:10.1.49]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:70) ~[tomcat-embed-core-10.1.49.jar:10.1.49]
+	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:127) ~[tomcat-embed-core-10.1.49.jar:10.1.49]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2026-03-28T14:04:20.462+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] c.kama.jchatmind.JchatmindApplication    : Starting JchatmindApplication using Java 17.0.18 with PID 73401 (/Users/dongmu/Downloads/java项目/JChatMind-main/jchatmind/target/classes started by dongmu in /Users/dongmu/Downloads/java项目/JChatMind-main)
+2026-03-28T14:04:20.462+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] c.kama.jchatmind.JchatmindApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-03-28T14:04:20.707+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-28T14:04:20.708+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-28T14:04:20.708+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.49]
+2026-03-28T14:04:20.717+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-28T14:04:20.717+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 254 ms
+2026-03-28T14:04:21.219+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-28T14:04:21.234+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
+2026-03-28T14:04:21.258+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-28T14:04:21.271+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] c.kama.jchatmind.JchatmindApplication    : Started JchatmindApplication in 0.822 seconds (process running for 1870.146)
+2026-03-28T14:04:21.272+08:00  INFO 73401 --- [jchatmind] [restartedMain] [traceId=,spanId=] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-28T14:04:31.840+08:00  INFO 73401 --- [jchatmind] [http-nio-8080-exec-2] [traceId=,spanId=] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-28T14:04:31.843+08:00  INFO 73401 --- [jchatmind] [http-nio-8080-exec-2] [traceId=,spanId=] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-28T14:04:31.850+08:00  INFO 73401 --- [jchatmind] [http-nio-8080-exec-2] [traceId=,spanId=] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2026-03-28T14:22:38.907+08:00  INFO 73401 --- [jchatmind] [SpringApplicationShutdownHook] [traceId=,spanId=] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-28T14:22:40.912+08:00  INFO 73401 --- [jchatmind] [tomcat-shutdown] [traceId=,spanId=] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-28T14:22:44.411+08:00  INFO 72261 --- [jchatmind] [restartedMain] [traceId=,spanId=] c.kama.jchatmind.JchatmindApplication    : Starting JchatmindApplication using Java 17.0.18 with PID 72261 (/Users/dongmu/Downloads/java项目/JChatMind-main/jchatmind/target/classes started by dongmu in /Users/dongmu/Downloads/java项目/JChatMind-main)
+2026-03-28T14:22:44.412+08:00  INFO 72261 --- [jchatmind] [restartedMain] [traceId=,spanId=] c.kama.jchatmind.JchatmindApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-03-28T14:22:44.434+08:00  INFO 72261 --- [jchatmind] [restartedMain] [traceId=,spanId=] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-28T14:22:44.435+08:00  INFO 72261 --- [jchatmind] [restartedMain] [traceId=,spanId=] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-28T14:22:45.419+08:00  INFO 72261 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-28T14:22:45.427+08:00  INFO 72261 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-28T14:22:45.427+08:00  INFO 72261 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.49]
+2026-03-28T14:22:45.448+08:00  INFO 72261 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-28T14:22:45.448+08:00  INFO 72261 --- [jchatmind] [restartedMain] [traceId=,spanId=] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1013 ms
+2026-03-28T14:22:46.786+08:00  INFO 72261 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-28T14:22:46.796+08:00  INFO 72261 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
+2026-03-28T14:22:46.865+08:00  INFO 72261 --- [jchatmind] [restartedMain] [traceId=,spanId=] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-28T14:22:46.879+08:00  INFO 72261 --- [jchatmind] [restartedMain] [traceId=,spanId=] c.kama.jchatmind.JchatmindApplication    : Started JchatmindApplication in 2.7 seconds (process running for 2.941)
+2026-03-28T14:22:46.901+08:00  INFO 72261 --- [jchatmind] [http-nio-8080-exec-1] [traceId=,spanId=] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-28T14:22:46.902+08:00  INFO 72261 --- [jchatmind] [http-nio-8080-exec-1] [traceId=,spanId=] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-28T14:22:46.904+08:00  INFO 72261 --- [jchatmind] [http-nio-8080-exec-1] [traceId=,spanId=] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-03-28T15:17:10.686+08:00  INFO 72261 --- [jchatmind] [SpringApplicationShutdownHook] [traceId=,spanId=] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-28T15:17:42.698+08:00  INFO 72261 --- [jchatmind] [SpringApplicationShutdownHook] [traceId=,spanId=] o.s.c.support.DefaultLifecycleProcessor  : Shutdown phase 2147482623 ends with 1 bean still running after timeout of 30000ms: [webServerGracefulShutdown]
+2026-03-28T15:17:42.747+08:00  INFO 72261 --- [jchatmind] [tomcat-shutdown] [traceId=,spanId=] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown aborted with one or more requests still active
+2026-03-28T15:17:42.788+08:00  WARN 72261 --- [jchatmind] [http-nio-8080-exec-1] [traceId=,spanId=] c.k.j.exception.GlobalExceptionHandler   : Async request timeout
+2026-03-28T15:17:42.790+08:00  WARN 72261 --- [jchatmind] [http-nio-8080-exec-1] [traceId=,spanId=] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]

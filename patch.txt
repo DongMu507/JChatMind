@@ -1,0 +1,4 @@
+    @ExceptionHandler(AsyncRequestTimeoutException.class)
+    public void handleAsyncRequestTimeoutException(AsyncRequestTimeoutException e) {
+        log.warn("Async request timeout");
+    }
