@@ -13,5 +13,5 @@ public class JchatmindApplication {
         
         SpringApplication.run(JchatmindApplication.class, args);
     }
-    
+    //我在main加了行注释，测试rebase
 }
